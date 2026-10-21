@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-22",
+  "unit_tests": {
+    "passed": 22,
+    "failed": 0,
+    "skipped": 0
+  },
+  "workspace_manifests": 306,
+  "prior_evidence_checks": {
+    "round1": "passed",
+    "round2": "passed",
+    "round3": "passed"
+  },
+  "round4_evidence": {
+    "jobs": 80,
+    "metric_rows": 10880,
+    "seed_endpoints": 1920,
+    "failed_main_runs": 0,
+    "coordinate_pairs": 20,
+    "exact_coordinate_pairs": 20,
+    "exact_replay": true,
+    "numerical_commit": "414e78594d752ff44a9ecbef8aed658e2c34348b"
+  },
+  "pdf": {
+    "pages": 4,
+    "all_pages_rendered_and_visually_reviewed": true
+  },
+  "analysis_anomaly": "Initial exporter duplicate h keyword fixed before tables; raw training unchanged",
+  "limitations": [
+    "Same-machine replay is not independent member replication",
+    "N=6 full enumeration, two independently trained h tasks, positive amplitudes",
+    "Matched H actions/model calls do not imply matched wall time",
+    "No new optimizer, scalable method or universal scale benefit"
+  ],
+  "sha256": {
+    "experiments/configs/round4.json": "3d1734b80052ac3c0067986699edc0a391f0ff945794c128ae2d2d38e3e1d498",
+    "scripts/run_round4.py": "f70f25e2e5a55498941fbaf390119062b82f6fe3e6e9b2eb0369444633120846",
+    "scripts/summarize_round4.py": "6fb748a1f683d1e5255e7bc24d8f59139e366cb809a858d70ac7595ef960a15c",
+    "scripts/verify_round4.py": "9f0caf55c95f11ed70cf5a672805b68b9c1c3ef8b3ed4c7fc9e8c848e3934673",
+    "src/ctqs/coordinates.py": "d7ee6e9d10b8501eb827c163cf1c1073a5ddfaf14983937e742b47831b2c0a4c",
+    "tests/test_coordinates.py": "4dafd8d55f68ffc5d033e6952188d1762693be9ed60aeae02e5139306ce7b8cd",
+    "docs/theory_round4.md": "5055324aaf1c1130ecf4a0cb9fc4e8ded5900f12c0f947a5931dbafdf5599814",
+    "docs/round4_report.md": "522eec1f30dd3149a7766c2af24a70588713439af776c478784ba8cec2d29a80",
+    "docs/round4_report.pdf": "8fa890de7747787675e0f703d7758e8536eb92169061a7e63de3860ed81f86d5",
+    "docs/results/round4/control_audit.json": "8dabf293b500a7fad5d39e866601bda037b59882b32626910d5ee56f65d1d631"
+  }
+}

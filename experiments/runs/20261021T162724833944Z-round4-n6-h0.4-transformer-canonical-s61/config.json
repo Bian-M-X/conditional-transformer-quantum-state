@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "issue": 7,
+  "n": 6,
+  "h_values": [
+    0.4,
+    0.6
+  ],
+  "architectures": [
+    "mlp",
+    "transformer"
+  ],
+  "seeds": [
+    17,
+    29,
+    43,
+    61,
+    73
+  ],
+  "arms": [
+    "physical",
+    "scaled",
+    "matched",
+    "canonical"
+  ],
+  "scale": 0.0625,
+  "steps": 1200,
+  "learning_rate": 0.005,
+  "adam_epsilon": 1e-08,
+  "validation_every": 50,
+  "train": [
+    -0.0625,
+    0.0,
+    0.0625
+  ],
+  "validation": [
+    -0.02,
+    -0.004,
+    0.004,
+    0.02
+  ],
+  "test": [
+    -0.052,
+    -0.027,
+    -0.008,
+    -0.0015,
+    -0.0003,
+    0.0003,
+    0.0015,
+    0.008,
+    0.027,
+    0.052
+  ],
+  "control_atol": 1e-10,
+  "control_rtol": 1e-08,
+  "timeout_seconds_per_run": 600,
+  "timeout_seconds_per_invocation": 1800,
+  "checkpoint_rule": "minimum validation variational energy; final secondary",
+  "primary": "selected/test/direct mean infidelity per seed",
+  "data_status": "new frozen screening grid, becomes development data after analysis"
+}
