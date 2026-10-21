@@ -23,6 +23,10 @@ def inline(text):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--font',default='C:/Windows/Fonts/simsun.ttc')
+    parser.add_argument('--source',default='docs/round1_report.md')
+    parser.add_argument('--output',default='docs/round1_report.pdf')
+    parser.add_argument('--footer',default='CTQS / Round 1 / 2026-10-19 / 初筛研究报告')
+    parser.add_argument('--title',default='条件 Transformer 量子态：第一轮机制与泛化研究')
     args=parser.parse_args()
     pdfmetrics.registerFont(TTFont('CJK',args.font,subfontIndex=0))
     styles=getSampleStyleSheet()
@@ -31,8 +35,8 @@ def main():
     h1=ParagraphStyle('H1CN',parent=normal,fontSize=14,leading=21,spaceBefore=14,spaceAfter=8,textColor=colors.HexColor('#174d60'),keepWithNext=True)
     h2=ParagraphStyle('H2CN',parent=h1,fontSize=11.5,leading=18)
     tiny=ParagraphStyle('TinyCN',parent=normal,fontSize=8,leading=12,spaceAfter=0)
-    source=ROOT/'docs'/'round1_report.md'
-    target=ROOT/'docs'/'round1_report.pdf'
+    source=ROOT/args.source
+    target=ROOT/args.output
     story=[]; table_rows=[]; paragraph=[]
     width=174*mm
     def flush_paragraph():
@@ -70,10 +74,10 @@ def main():
     flush_paragraph();flush_table()
     def footer(canvas,doc):
         canvas.setFont('CJK',8);canvas.setFillColor(colors.HexColor('#56656b'))
-        canvas.drawString(18*mm,12*mm,'CTQS / Round 1 / 2026-10-19 / 初筛研究报告')
+        canvas.drawString(18*mm,12*mm,args.footer)
         canvas.drawRightString(192*mm,12*mm,str(doc.page))
     doc=SimpleDocTemplate(str(target),pagesize=(210*mm,297*mm),leftMargin=18*mm,rightMargin=18*mm,
-        topMargin=17*mm,bottomMargin=20*mm,title='条件 Transformer 量子态：第一轮机制与泛化研究',author='CTQS research project; AI-assisted draft')
+        topMargin=17*mm,bottomMargin=20*mm,title=args.title,author='CTQS research project; AI-assisted draft')
     doc.build(story,onFirstPage=footer,onLaterPages=footer)
     print(target)
 

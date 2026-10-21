@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-21",
+  "unit_tests": {
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0
+  },
+  "workspace_manifests": 124,
+  "round1_evidence": {
+    "jobs": 12,
+    "rows": 900,
+    "exact_replay": true
+  },
+  "round2_evidence": {
+    "stage_a": 60,
+    "stage_b": 60,
+    "metric_rows": 10650,
+    "exact_replay": true
+  },
+  "pdf": {
+    "pages": 5,
+    "all_pages_rendered_and_visually_reviewed": true
+  },
+  "limitations": [
+    "Same-machine repeat is not independent researcher replication",
+    "Forward H budget matched; total compute not matched",
+    "One failed timeout retained outside aggregates"
+  ],
+  "sha256": {
+    "scripts/run_round2.py": "9529e3c60c4419746d75f2b1f28b5ca5338c8a10794c88af758d6ad6c4423e99",
+    "scripts/summarize_round2.py": "d45aacebcffaf308ddde0caa637023c9e754f500f32e03307e7c530e1978f488",
+    "scripts/verify_round2.py": "e78daea4296f0874905caf1a9793d532a47552c0be6d6869a5802d82fe52e57f",
+    "src/ctqs/acquisition.py": "775da3aa8ac77309092b917cb86b868d9963ef238e2c6355b8b7deb3148f57a0",
+    "docs/round2_report.md": "6ef7108744e37eb9d211dbd598c2c0bab10aaa37232232715628016b5fdca8d3",
+    "docs/round2_report.pdf": "01ee1f1b519abd9608634e5f8385a0e48843f5e146ab56d1bcb7b25e236bf57c"
+  }
+}

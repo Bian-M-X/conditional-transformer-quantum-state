@@ -1,0 +1,53 @@
+[
+  {
+    "operation": "aten::matmul",
+    "count": 1,
+    "shapes": [
+      [
+        64
+      ],
+      [
+        64,
+        64
+      ]
+    ]
+  },
+  {
+    "operation": "aten::mm",
+    "count": 2,
+    "shapes": [
+      [
+        1,
+        64
+      ],
+      [
+        64,
+        64
+      ]
+    ]
+  },
+  {
+    "operation": "aten::matmul",
+    "count": 1,
+    "shapes": [
+      [
+        64
+      ],
+      [
+        64
+      ]
+    ]
+  },
+  {
+    "operation": "aten::dot",
+    "count": 1,
+    "shapes": [
+      [
+        64
+      ],
+      [
+        64
+      ]
+    ]
+  }
+]

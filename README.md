@@ -5,6 +5,18 @@
 **拟定题目**：近简并系统中条件神经网络量子态的可靠泛化与计算预算感知的自适应参数采样  
 **English**: Reliable Generalization and Budget-Aware Adaptive Parameter Sampling for Conditional Neural Quantum States near Quasi-Degeneracies
 
+## 第二轮研究入口（Issue #3，待独立复核）
+
+- [第二轮中文报告 PDF](docs/round2_report.pdf) / [正文](docs/round2_report.md) / [交接记录](docs/handoffs/issue-3.md)
+- [冻结协议](docs/round2_preregistration.md)、[完整统计](docs/results/round2/tables.md)、[运行索引](experiments/round2_index.json)
+- [协变反例与敏感度界](docs/theory_round2.md)、[前向/反向成本修正](docs/decisions/0003-forward-budget-accounting.md)
+
+完成 60 组训练预算配置与 60 组选点配置，每项五个配对种子，其中 12 组复用首轮。
+当前选模流程下的低场错误未被增加最大训练步数稳定解决；带符号纵场任务中，主动选点没有通过预设优势标准。
+匹配的是 2400 次前向训练加选点 H 作用，**并非总计算成本**；反向成本、失败与重跑均公开。
+复核：`.venv\Scripts\python.exe scripts/verify_round2.py`；重建表图：`.venv\Scripts\python.exe scripts/summarize_round2.py`。
+独立复跑命令及独立审核要求见交接记录，不要把同机重跑当作跨成员复现。
+
 ## 第一轮研究入口（Issue #1，待独立复核）
 
 - [中文研究报告 PDF](docs/round1_report.pdf) / [可编辑正文](docs/round1_report.md)

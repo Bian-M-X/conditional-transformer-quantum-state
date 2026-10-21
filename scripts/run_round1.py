@@ -156,6 +156,7 @@ def run(cfg, arch, mode, seed, config_path, issue, tag):
         raise
     finally:
         dump(out / 'manifest.json', manifest)
+    return run_id
 
 
 def main():

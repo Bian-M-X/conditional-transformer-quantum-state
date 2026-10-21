@@ -1,0 +1,20 @@
+{
+  "stage": "round2b",
+  "n": 6,
+  "h": 0.35,
+  "seeds": [17, 29, 43, 61, 73],
+  "architectures": ["mlp", "transformer"],
+  "policies": ["continue", "uniform", "log", "random", "variance", "ritz_gain"],
+  "initial_lambda": [0.0, 0.04],
+  "candidate_lambda": [-0.04, -0.03, -0.02, -0.01, -0.003, -0.001, -0.0003, -0.0001, 0.0, 0.0001, 0.0003, 0.001, 0.003, 0.01, 0.02, 0.03, 0.04],
+  "test_lambda": [-0.035, -0.025, -0.015, -0.006, -0.002, -0.0006, -0.00015, -0.00006, 0.00006, 0.00015, 0.0006, 0.002, 0.006, 0.015, 0.025, 0.035],
+  "uniform_additions": [-0.04, -0.02, 0.02],
+  "log_additions": [-0.04, -0.001, 0.001],
+  "acquisition_steps": [400, 650, 900],
+  "total_h_actions": 2400,
+  "batch_size": 2,
+  "learning_rate": 0.005,
+  "checkpoint_rule": "final state after fixed total H-action budget; no validation or ED selection",
+  "condition_scaling": "none; physical h and lambda directly, as in round 1",
+  "timeout_seconds_per_run": 600
+}

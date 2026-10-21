@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "run_id": "20261021T041602307653Z-round2b-transformer-log-s17",
+  "created_at_utc": "20261021T041602307653Z",
+  "status": "completed",
+  "owner": "Bian-M-X/Codex",
+  "issue": 3,
+  "git_commit": "b98f23f86c4250c177c63fbb2a444f133be56562",
+  "seed": 17,
+  "question": "Does acquisition beat continued training after charging selection cost and testing covariance controls?",
+  "model": {
+    "architecture": "transformer",
+    "policy": "log",
+    "training_mode": "raw",
+    "parameters": 2449
+  },
+  "hamiltonian": {
+    "n": 6,
+    "h": 0.35,
+    "boundary": "open",
+    "J": 1,
+    "basis": "MSB left, Z(0)=+1"
+  },
+  "parameter_split": {
+    "train": [
+      -0.04,
+      -0.001,
+      0.0,
+      0.001,
+      0.04
+    ],
+    "validation": null,
+    "test": [
+      -0.035,
+      -0.025,
+      -0.015,
+      -0.006,
+      -0.002,
+      -0.0006,
+      -0.00015,
+      -6e-05,
+      6e-05,
+      0.00015,
+      0.0006,
+      0.002,
+      0.006,
+      0.015,
+      0.025,
+      0.035
+    ],
+    "candidates": [
+      -0.04,
+      -0.03,
+      -0.02,
+      -0.01,
+      -0.003,
+      -0.001,
+      -0.0003,
+      -0.0001,
+      0.0,
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01,
+      0.02,
+      0.03,
+      0.04
+    ]
+  },
+  "command": "python scripts/run_round2.py --stage b --arch transformer --policy log --seed 17 --tag round2b",
+  "environment": {
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "cpu",
+    "dtype": "float64",
+    "torch_threads": 1
+  },
+  "budget": {
+    "gradient_steps": 1200,
+    "training_h_actions": 2400,
+    "acquisition_h_actions": 0,
+    "total_training_selection_h_actions": 2400,
+    "training_model_calls": 2400,
+    "acquisition_model_calls": 0,
+    "h_action_scope": "forward applications; backward and evaluation counted separately (ADR 0003)",
+    "backward_h_actions": 2400,
+    "total_with_backward_h_actions": 4800,
+    "evaluation_model_calls": 21,
+    "postprocessing_h_actions": 63,
+    "evaluation_h_actions": 210,
+    "exact_diagonalizations": 21,
+    "acquisition_seconds": 3.799985279329121e-06,
+    "initialization_training_seconds": 4.397080500013544,
+    "fit_and_selection_seconds": 4.3970842999988236,
+    "evaluation_seconds": 0.027230599996983074,
+    "wall_seconds": 4.4243150999973295,
+    "device": "cpu",
+    "prediction_forward_calls_nominal": {
+      "direct": 1,
+      "lookup": 0,
+      "sign_map": 1,
+      "covariant_average": 2,
+      "train_span_ritz": 0
+    }
+  },
+  "oracle_access": {
+    "training": false,
+    "selection": false,
+    "evaluation": "dense ED",
+    "postprocessing": false
+  },
+  "metrics": {
+    "direct": {
+      "mean_infidelity": 0.49918738786199907,
+      "worst_infidelity": 0.9993136939775499,
+      "mean_energy_error_per_spin": 0.0017552258100349918,
+      "worst_correlation_error": 0.8728893516761557,
+      "mean_magnetization_error": 0.9376773033999473
+    },
+    "lookup": {
+      "mean_infidelity": 0.4991873870621415,
+      "worst_infidelity": 0.9993136936912441,
+      "mean_energy_error_per_spin": 0.0017552256592227402,
+      "worst_correlation_error": 0.8728893516761268,
+      "mean_magnetization_error": 0.9376773048135204
+    },
+    "sign_map": {
+      "mean_infidelity": 0.17672849294811732,
+      "worst_infidelity": 0.48098813688500686,
+      "mean_energy_error_per_spin": 0.00011857018178115797,
+      "worst_correlation_error": 0.87288935118917,
+      "mean_magnetization_error": 0.3325864239821819
+    },
+    "covariant_average": {
+      "mean_infidelity": 0.24377251786799223,
+      "worst_infidelity": 0.4754605864362128,
+      "mean_energy_error_per_spin": 0.001491244392415501,
+      "worst_correlation_error": 0.874008465678855,
+      "mean_magnetization_error": 0.605459364857674
+    },
+    "train_span_ritz": {
+      "mean_infidelity": 0.49911560408418654,
+      "worst_infidelity": 0.9993041558927908,
+      "mean_energy_error_per_spin": 0.0017527985283697274,
+      "worst_correlation_error": 0.8728870928090566,
+      "mean_magnetization_error": 0.9376350425272131
+    }
+  },
+  "artifacts": [
+    "config.json",
+    "training.json",
+    "acquisition.json",
+    "metrics.json"
+  ],
+  "notes": "Prespecified screening. H-action budget matched; gradient updates, forward costs and wall time differ. No novelty or independent replication claim.",
+  "config_sha256": "05f71ceadcca4505377c269aaed0b236aae367ac5a6efd5725d220d1af735283",
+  "common_prefix_hash": "6a747ce741a68d02f3e8d2a30dae694d79f25d26efdbaeb2d8bf983461f78fa3",
+  "final_state_sha256": "d66fe1b0e6e8b91f16a5b3b9b4aa18f6347b69653728541605fedce1e6607537"
+}
