@@ -5,6 +5,17 @@
 **拟定题目**：近简并系统中条件神经网络量子态的可靠泛化与计算预算感知的自适应参数采样  
 **English**: Reliable Generalization and Budget-Aware Adaptive Parameter Sampling for Conditional Neural Quantum States near Quasi-Degeneracies
 
+## 第三轮研究入口（Issue #5，待独立复核）
+
+- [第三轮报告 PDF](docs/round3_report.pdf) / [正文](docs/round3_report.md) / [交接记录](docs/handoffs/issue-5.md)
+- [冻结协议](docs/round3_preregistration.md)、[完整统计](docs/results/round3/tables.md)、[运行索引](experiments/round3_index.json)
+- [缩放的函数等价性与 Adam 参数化分析](docs/theory_round3.md)
+
+新完成100组配置：20组旧轨迹补评最终模型、80组尺度/协变/尺寸对照，另有一次同机重跑。
+原任务的普通 MLP 最终步仍未解决低场错误；缩放与协变训练的效果依赖模型和尺寸，不能宣称通用收益。
+H预算已计入反向传播，网络调用和时间差异另列。复核：`.venv\Scripts\python.exe scripts/verify_round3.py`。
+完整保留负面结果；正式结论仍等待其他成员独立复核。
+
 ## 第二轮研究入口（Issue #3，待独立复核）
 
 - [第二轮中文报告 PDF](docs/round2_report.pdf) / [正文](docs/round2_report.md) / [交接记录](docs/handoffs/issue-3.md)

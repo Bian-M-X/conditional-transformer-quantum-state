@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-22",
+  "numerical_validation_date": "2026-10-21",
+  "unit_tests": {
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0
+  },
+  "workspace_manifests": 225,
+  "round1_evidence": {
+    "jobs": 12,
+    "metric_rows": 900,
+    "exact_replay": true
+  },
+  "round2_evidence": {
+    "stage_a": 60,
+    "stage_b": 60,
+    "metric_rows": 10650,
+    "exact_replay": true
+  },
+  "round3_evidence": {
+    "stage_a": 20,
+    "stage_b": 80,
+    "metric_rows": 13880,
+    "legacy_trajectories_and_selected_metrics_exact": 20,
+    "exact_replay": true,
+    "failed_main_runs": 0
+  },
+  "pdf": {
+    "pages": 5,
+    "all_pages_rendered_and_visually_reviewed": true,
+    "review_date": "2026-10-22"
+  },
+  "limitations": [
+    "Same-machine replay is not independent member replication",
+    "Forward, backward and validation H actions matched within a stage; network calls and wall time differ",
+    "Scaling experiments do not preserve initial functions; coordinate-control experiment remains planned",
+    "Full enumeration at N <= 6 does not establish scalability"
+  ],
+  "sha256": {
+    "experiments/configs/round3.json": "9e193262219f4ee4792e12d03bbaa3068f0f4f3ef2ca42a2c069cfecfb03bd5a",
+    "scripts/run_round3.py": "594ab3121d0219fd767a2f7edd084e000f25e68b6de756e746aa2af814b05b7b",
+    "scripts/summarize_round3.py": "78219a9389ed1305d5a3ac9f16931e77758ea74cee04e8039de108c84d0497b9",
+    "scripts/verify_round3.py": "26e20bb60f8b024c507ad11355696929861198084b6321d373d363b4f4063988",
+    "src/ctqs/conditioning.py": "928bb136c7bfc396f7f2ca96a75303f5845a035f5691b357f4718d53d196bcf8",
+    "tests/test_scaling_equivalence.py": "eb4f902a811c45ba8b8a4496b944672f9144fbd50055ff4a64283562a7423a2b",
+    "docs/theory_round3.md": "5db7b76a8ef0df3812d61997d6fa9dc77f895ce0e7a1602c712b29017862611b",
+    "docs/round3_report.md": "45415da6a062674fa34edac2ba819a2bee7a33d3eb78c9a57f80349fc0ebaf53",
+    "docs/round3_report.pdf": "e9049346126640967828dd2a33cb7b8ab44c92daaaabbc31904f4451bae7636f"
+  }
+}

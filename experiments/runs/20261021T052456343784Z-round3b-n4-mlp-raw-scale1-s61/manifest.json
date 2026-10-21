@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "run_id": "20261021T052456343784Z-round3b-n4-mlp-raw-scale1-s61",
+  "created_at_utc": "20261021T052456343784Z",
+  "status": "completed",
+  "owner": "Bian-M-X/Codex",
+  "issue": 5,
+  "git_commit": "ae5236adb7d48da3e8c7562b409e6799c626129e",
+  "seed": 61,
+  "question": "Do conditioning, training covariance and checkpoint selection explain the observed failures?",
+  "job": {
+    "stage": "b",
+    "n": 4,
+    "architecture": "mlp",
+    "scale": 1.0,
+    "mode": "raw",
+    "seed": 61
+  },
+  "model": {
+    "architecture": "mlp",
+    "training_mode": "raw",
+    "condition_scale": 1.0,
+    "parameters": 1441,
+    "selected_step": 1200
+  },
+  "hamiltonian": {
+    "n": 4,
+    "h": 0.5,
+    "lambda_value": "variable",
+    "boundary": "open",
+    "J": 1,
+    "basis": "MSB left; Z(0)=+1"
+  },
+  "parameter_split": {
+    "train": [
+      -0.04,
+      0.0,
+      0.04
+    ],
+    "validation": [
+      -0.012,
+      -0.003,
+      0.003,
+      0.012
+    ],
+    "test": [
+      -0.032,
+      -0.018,
+      -0.007,
+      -0.0012,
+      -0.0002,
+      0.0002,
+      0.0012,
+      0.007,
+      0.018,
+      0.032
+    ]
+  },
+  "command": "python scripts/run_round3.py --stage b --n 4 --arch mlp --scale 1.0 --mode raw --seed 61 --tag round3",
+  "environment": {
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "cpu",
+    "dtype": "float64",
+    "torch_threads": 1
+  },
+  "budget": {
+    "gradient_steps": 1200,
+    "training_forward_h_actions": 3600,
+    "training_backward_h_actions": 3600,
+    "validation_h_actions": 96,
+    "total_training_selection_h_actions": 7296,
+    "training_model_calls": 3600,
+    "validation_model_calls": 96,
+    "evaluation_model_calls": 34,
+    "postprocessing_h_actions": 102,
+    "evaluation_h_actions": 272,
+    "exact_diagonalizations": 17,
+    "fit_selection_seconds": 1.2710988000035286,
+    "evaluation_seconds": 0.016026800003601238,
+    "wall_seconds": 1.2871257000078913
+  },
+  "oracle_access": {
+    "training": false,
+    "selection": false,
+    "evaluation": "dense ED after checkpoint freeze",
+    "postprocessing": false
+  },
+  "metrics": {
+    "selected/train/direct": {
+      "mean_infidelity": 1.3620816097829428e-05,
+      "worst_infidelity": 1.6141902017929866e-05,
+      "mean_energy_error_per_spin": 6.788621033056626e-06,
+      "mean_magnetization_error": 0.003394184899545459,
+      "worst_correlation_error": 0.005797718102665939
+    },
+    "selected/train/lookup": {
+      "mean_infidelity": 1.3620816097829428e-05,
+      "worst_infidelity": 1.6141902017929866e-05,
+      "mean_energy_error_per_spin": 6.788621033056626e-06,
+      "mean_magnetization_error": 0.003394184899545459,
+      "worst_correlation_error": 0.005797718102665939
+    },
+    "selected/train/train_span_ritz": {
+      "mean_infidelity": 2.3853662967458313e-06,
+      "worst_infidelity": 3.1262525408415343e-06,
+      "mean_energy_error_per_spin": 2.5532851681460875e-06,
+      "mean_magnetization_error": 0.000527529532440007,
+      "worst_correlation_error": 0.0008568625488555304
+    },
+    "selected/train/post_covariant": {
+      "mean_infidelity": 9.466900463402558e-06,
+      "worst_infidelity": 9.87058285439879e-06,
+      "mean_energy_error_per_spin": 4.71281730448266e-06,
+      "mean_magnetization_error": 0.002138635375558218,
+      "worst_correlation_error": 0.004485140337068982
+    },
+    "selected/validation/direct": {
+      "mean_infidelity": 4.463583291455797e-05,
+      "worst_infidelity": 8.818080796391126e-05,
+      "mean_energy_error_per_spin": 8.22601957412017e-06,
+      "mean_magnetization_error": 0.008110886216768545,
+      "worst_correlation_error": 0.003100267801224743
+    },
+    "selected/validation/lookup": {
+      "mean_infidelity": 0.0001251158624747395,
+      "worst_infidelity": 0.00024573276226547147,
+      "mean_energy_error_per_spin": 7.278084881490177e-06,
+      "mean_magnetization_error": 0.016464649191441142,
+      "worst_correlation_error": 0.008010178502493859
+    },
+    "selected/validation/train_span_ritz": {
+      "mean_infidelity": 1.4114300272149993e-06,
+      "worst_infidelity": 1.607670036429809e-06,
+      "mean_energy_error_per_spin": 9.855988074014554e-07,
+      "mean_magnetization_error": 5.945652008348479e-05,
+      "worst_correlation_error": 0.00096617149530831
+    },
+    "selected/validation/post_covariant": {
+      "mean_infidelity": 3.8235917631024297e-05,
+      "worst_infidelity": 6.346609408702797e-05,
+      "mean_energy_error_per_spin": 5.346550821794249e-06,
+      "mean_magnetization_error": 0.00803940999578146,
+      "worst_correlation_error": 0.0028222569574490874
+    },
+    "selected/test/direct": {
+      "mean_infidelity": 4.604132983699882e-05,
+      "worst_infidelity": 0.00011955946120190131,
+      "mean_energy_error_per_spin": 7.247342300398252e-06,
+      "mean_magnetization_error": 0.00845151821545958,
+      "worst_correlation_error": 0.009552145097675435
+    },
+    "selected/test/lookup": {
+      "mean_infidelity": 0.00013228129410182144,
+      "worst_infidelity": 0.0003594810390628034,
+      "mean_energy_error_per_spin": 8.071188055636114e-06,
+      "mean_magnetization_error": 0.015146084935029868,
+      "worst_correlation_error": 0.018653131371129228
+    },
+    "selected/test/train_span_ritz": {
+      "mean_infidelity": 1.4654582642270597e-06,
+      "worst_infidelity": 1.7362515796204292e-06,
+      "mean_energy_error_per_spin": 1.2361674595950944e-06,
+      "mean_magnetization_error": 0.00014481711768160892,
+      "worst_correlation_error": 0.0009479621984452846
+    },
+    "selected/test/post_covariant": {
+      "mean_infidelity": 4.0969402540236286e-05,
+      "worst_infidelity": 9.6766259104486e-05,
+      "mean_energy_error_per_spin": 4.928431726891613e-06,
+      "mean_magnetization_error": 0.0072842530273229695,
+      "worst_correlation_error": 0.009524422310654979
+    },
+    "final/train/direct": {
+      "mean_infidelity": 1.3620816097829428e-05,
+      "worst_infidelity": 1.6141902017929866e-05,
+      "mean_energy_error_per_spin": 6.788621033056626e-06,
+      "mean_magnetization_error": 0.003394184899545459,
+      "worst_correlation_error": 0.005797718102665939
+    },
+    "final/train/lookup": {
+      "mean_infidelity": 1.3620816097829428e-05,
+      "worst_infidelity": 1.6141902017929866e-05,
+      "mean_energy_error_per_spin": 6.788621033056626e-06,
+      "mean_magnetization_error": 0.003394184899545459,
+      "worst_correlation_error": 0.005797718102665939
+    },
+    "final/train/train_span_ritz": {
+      "mean_infidelity": 2.3853662967458313e-06,
+      "worst_infidelity": 3.1262525408415343e-06,
+      "mean_energy_error_per_spin": 2.5532851681460875e-06,
+      "mean_magnetization_error": 0.000527529532440007,
+      "worst_correlation_error": 0.0008568625488555304
+    },
+    "final/train/post_covariant": {
+      "mean_infidelity": 9.466900463402558e-06,
+      "worst_infidelity": 9.87058285439879e-06,
+      "mean_energy_error_per_spin": 4.71281730448266e-06,
+      "mean_magnetization_error": 0.002138635375558218,
+      "worst_correlation_error": 0.004485140337068982
+    },
+    "final/validation/direct": {
+      "mean_infidelity": 4.463583291455797e-05,
+      "worst_infidelity": 8.818080796391126e-05,
+      "mean_energy_error_per_spin": 8.22601957412017e-06,
+      "mean_magnetization_error": 0.008110886216768545,
+      "worst_correlation_error": 0.003100267801224743
+    },
+    "final/validation/lookup": {
+      "mean_infidelity": 0.0001251158624747395,
+      "worst_infidelity": 0.00024573276226547147,
+      "mean_energy_error_per_spin": 7.278084881490177e-06,
+      "mean_magnetization_error": 0.016464649191441142,
+      "worst_correlation_error": 0.008010178502493859
+    },
+    "final/validation/train_span_ritz": {
+      "mean_infidelity": 1.4114300272149993e-06,
+      "worst_infidelity": 1.607670036429809e-06,
+      "mean_energy_error_per_spin": 9.855988074014554e-07,
+      "mean_magnetization_error": 5.945652008348479e-05,
+      "worst_correlation_error": 0.00096617149530831
+    },
+    "final/validation/post_covariant": {
+      "mean_infidelity": 3.8235917631024297e-05,
+      "worst_infidelity": 6.346609408702797e-05,
+      "mean_energy_error_per_spin": 5.346550821794249e-06,
+      "mean_magnetization_error": 0.00803940999578146,
+      "worst_correlation_error": 0.0028222569574490874
+    },
+    "final/test/direct": {
+      "mean_infidelity": 4.604132983699882e-05,
+      "worst_infidelity": 0.00011955946120190131,
+      "mean_energy_error_per_spin": 7.247342300398252e-06,
+      "mean_magnetization_error": 0.00845151821545958,
+      "worst_correlation_error": 0.009552145097675435
+    },
+    "final/test/lookup": {
+      "mean_infidelity": 0.00013228129410182144,
+      "worst_infidelity": 0.0003594810390628034,
+      "mean_energy_error_per_spin": 8.071188055636114e-06,
+      "mean_magnetization_error": 0.015146084935029868,
+      "worst_correlation_error": 0.018653131371129228
+    },
+    "final/test/train_span_ritz": {
+      "mean_infidelity": 1.4654582642270597e-06,
+      "worst_infidelity": 1.7362515796204292e-06,
+      "mean_energy_error_per_spin": 1.2361674595950944e-06,
+      "mean_magnetization_error": 0.00014481711768160892,
+      "worst_correlation_error": 0.0009479621984452846
+    },
+    "final/test/post_covariant": {
+      "mean_infidelity": 4.0969402540236286e-05,
+      "worst_infidelity": 9.6766259104486e-05,
+      "mean_energy_error_per_spin": 4.928431726891613e-06,
+      "mean_magnetization_error": 0.0072842530273229695,
+      "worst_correlation_error": 0.009524422310654979
+    }
+  },
+  "artifacts": [
+    "config.json",
+    "training.json",
+    "metrics.json"
+  ],
+  "notes": "Screening; H work including backward matched within stage, network calls/wall differ. No independent-member replication.",
+  "config_sha256": "48789af6d46f75f19673f34e7dab3b89c11a265162124c034746d71f2c0751a1",
+  "initial_state_sha256": "3a03e7d2f8a04fdbbff8abbd17511fcaa6107b989b0d91b2d5a51ed6f72f496f",
+  "final_state_sha256": "572383fab9fe4bcacdfa23a21dca409da96213f7e2e9650961858a03064f7e2b",
+  "selected_state_sha256": "572383fab9fe4bcacdfa23a21dca409da96213f7e2e9650961858a03064f7e2b"
+}
