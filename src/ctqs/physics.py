@@ -11,7 +11,8 @@ def basis(n):
 
 def hamiltonian(n, h, lam=0.0):
     z = 1 - 2 * basis(n)
-    matrix = np.diag(-np.sum(z[:, :-1] * z[:, 1:], axis=1) + lam * z[:, 0])
+    # Integer zero is a valid lambda; off-diagonal transverse fields are real.
+    matrix = np.diag((-np.sum(z[:, :-1] * z[:, 1:], axis=1) + lam * z[:, 0]).astype(float))
     indices = np.arange(1 << n)
     for site in range(n):
         matrix[indices, indices ^ (1 << site)] -= h

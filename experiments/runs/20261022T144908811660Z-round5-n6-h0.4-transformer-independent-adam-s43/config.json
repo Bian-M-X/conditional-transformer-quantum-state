@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "issue": 9,
+  "n": 6,
+  "h_values": [
+    0.4,
+    0.6
+  ],
+  "architectures": [
+    "mlp",
+    "transformer"
+  ],
+  "seeds": [
+    17,
+    29,
+    43,
+    61,
+    73
+  ],
+  "sharing": [
+    "shared",
+    "independent"
+  ],
+  "optimizers": [
+    "adam",
+    "lbfgs"
+  ],
+  "closure_budget_per_model": 1200,
+  "adam_lr": 0.005,
+  "lbfgs_lr": 1.0,
+  "lbfgs_history_size": 20,
+  "train": [
+    -0.0625,
+    0.0,
+    0.0625
+  ],
+  "test": [
+    -0.057,
+    -0.035,
+    -0.01,
+    -0.0025,
+    -0.0005,
+    0.0005,
+    0.0025,
+    0.01,
+    0.035,
+    0.057
+  ],
+  "reliable_worst_infidelity": 0.01,
+  "required_seeds": 4,
+  "relative_rescue_factor": 10,
+  "timeout_seconds_per_run": 600,
+  "timeout_seconds_per_invocation": 1800,
+  "primary": "final accepted worst training-anchor infidelity; no checkpoint selection",
+  "data_status": "train anchors intentionally reused as development diagnostics; new test screening grid"
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "run_id": "20261022T145324647732Z-round5-n6-h0.6-transformer-shared-adam-s73",
+  "created_at_utc": "20261022T145324647732Z",
+  "status": "completed",
+  "owner": "Bian-M-X/Codex",
+  "issue": 9,
+  "git_commit": "2acdc205d9fcb46335547216dc73d4d7c04abc0d",
+  "seed": 73,
+  "question": "Does training-anchor failure persist without sharing and under a budgeted optimizer control?",
+  "job": {
+    "h": 0.6,
+    "architecture": "transformer",
+    "seed": 73,
+    "sharing": "shared",
+    "optimizer": "adam"
+  },
+  "model": {
+    "architecture": "transformer",
+    "sharing": "shared",
+    "optimizer": "adam",
+    "condition_scale": 1.0,
+    "checkpoint": "final accepted",
+    "parameters_per_model": 2449,
+    "model_count": 1,
+    "total_parameters": 2449
+  },
+  "hamiltonian": {
+    "n": 6,
+    "h": 0.6,
+    "lambda_value": "variable",
+    "boundary": "open",
+    "J": 1,
+    "basis": "MSB left; Z(0)=+1"
+  },
+  "parameter_split": {
+    "train": [
+      -0.0625,
+      0.0,
+      0.0625
+    ],
+    "validation": [],
+    "test": [
+      -0.057,
+      -0.035,
+      -0.01,
+      -0.0025,
+      -0.0005,
+      0.0005,
+      0.0025,
+      0.01,
+      0.035,
+      0.057
+    ]
+  },
+  "command": "python scripts/run_round5.py --h 0.6 --arch transformer --seed 73 --sharing shared --optimizer adam --tag round5",
+  "environment": {
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "cpu",
+    "dtype": "float64",
+    "torch_threads": 1
+  },
+  "budget": {
+    "training_forward_h_actions": 3600,
+    "training_backward_h_actions": 3600,
+    "total_training_h_actions": 7200,
+    "training_model_calls": 3600,
+    "closure_evaluations": 1200,
+    "optimizer_steps_completed": 1200,
+    "discarded_final_step_evaluations": 0,
+    "validation_h_actions": 0,
+    "evaluation_model_calls": 13,
+    "evaluation_h_actions": 84,
+    "postprocessing_h_actions": 39,
+    "exact_diagonalizations": 13,
+    "fit_seconds": 6.158031200000551,
+    "evaluation_seconds": 0.016819999997096602,
+    "wall_seconds": 6.174851299998409
+  },
+  "oracle_access": {
+    "training": false,
+    "selection": false,
+    "evaluation": "ED after final state freeze",
+    "postprocessing": false
+  },
+  "metrics": {
+    "test/direct": {
+      "mean_infidelity": 0.00033299987336711246,
+      "worst_infidelity": 0.0009355215448109133,
+      "mean_energy_error_per_spin": 9.716534914215499e-05,
+      "worst_correlation_error": 0.023065538052801093,
+      "mean_magnetization_error": 0.001691104187673046
+    },
+    "test/lookup": {
+      "mean_infidelity": 0.0024360102951570426,
+      "worst_infidelity": 0.008321172545190936,
+      "mean_energy_error_per_spin": 7.758284224175978e-05,
+      "worst_correlation_error": 0.10958366800610075,
+      "mean_magnetization_error": 0.04971900727393669
+    },
+    "test/train_span_ritz": {
+      "mean_infidelity": 5.854444189620223e-05,
+      "worst_infidelity": 7.909753829160593e-05,
+      "mean_energy_error_per_spin": 3.93364898996366e-05,
+      "worst_correlation_error": 0.006528147880919877,
+      "mean_magnetization_error": 0.0014590259741101047
+    },
+    "train/anchor": {
+      "mean_infidelity": 0.00011057279767941648,
+      "worst_infidelity": 0.00014246225448133476,
+      "mean_energy_error_per_spin": 5.734723215426266e-05,
+      "worst_correlation_error": 0.009354885501049737,
+      "mean_magnetization_error": 0.0033529263154670522
+    },
+    "train/direct": {
+      "mean_infidelity": 0.00011057279767941648,
+      "worst_infidelity": 0.00014246225448133476,
+      "mean_energy_error_per_spin": 5.734723215426266e-05,
+      "worst_correlation_error": 0.009354885501049737,
+      "mean_magnetization_error": 0.0033529263154670522
+    },
+    "train/lookup": {
+      "mean_infidelity": 0.00011057279767941648,
+      "worst_infidelity": 0.00014246225448133476,
+      "mean_energy_error_per_spin": 5.734723215426266e-05,
+      "worst_correlation_error": 0.009354885501049737,
+      "mean_magnetization_error": 0.0033529263154670522
+    },
+    "train/train_span_ritz": {
+      "mean_infidelity": 6.804889929756808e-05,
+      "worst_infidelity": 8.1681698424374e-05,
+      "mean_energy_error_per_spin": 4.721145228778509e-05,
+      "worst_correlation_error": 0.003868217847550537,
+      "mean_magnetization_error": 0.0024244635695064173
+    }
+  },
+  "artifacts": [
+    "config.json",
+    "training.json",
+    "metrics.json",
+    "amplitudes.json"
+  ],
+  "notes": "Development diagnostic. Independent uses triple parameters; equal H work is not equal updates or wall compute.",
+  "config_sha256": "a039b250abaf542892335744c8b4be7586fae260e45038c46b7cd924643411fd",
+  "initial_state_sha256": [
+    "63cd6eb5c19e6b38552eb9db734d7c43f3ca61707486f5349d805580d0873821"
+  ],
+  "final_state_sha256": [
+    "cc9d7f1082f5ba9288e21e6b1f852a199e9e80b11bbd2493581c49a577f9ecb3"
+  ]
+}

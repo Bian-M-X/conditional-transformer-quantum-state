@@ -1,9 +1,20 @@
 # Conditional Transformer Quantum State (CTQS)
 
-**Research status: exploratory / early-stage validation.** 研究目标是考察**近简并区域中条件神经网络量子态的可靠泛化**，重点评估有限训练预算下的参数采样策略。当前结果是预研究，不代表已有新的投稿级算法。
+**Research status: exploratory / early-stage validation.** 研究目标是考察**近简并区域中条件神经网络量子态的可靠训练与泛化**。第五轮路线评估后，暂缓主动选点主线，优先核查强优化器下共享模型的可靠性与查询成本价值。当前结果是预研究，不代表已有新的投稿级算法；正式结论仍待独立成员复核。
 
-**拟定题目**：近简并系统中条件神经网络量子态的可靠泛化与计算预算感知的自适应参数采样  
-**English**: Reliable Generalization and Budget-Aware Adaptive Parameter Sampling for Conditional Neural Quantum States near Quasi-Degeneracies
+**当前候选题目（未定稿）**：近简并系统中条件神经网络量子态的训练可靠性与摊销价值
+
+**English**: Training Reliability and Amortization Value of Conditional Neural Quantum States near Quasi-Degeneracies
+
+## 第五轮研究入口（Issue #9，路线决策，待独立复核）
+
+- [前四轮路线评估](docs/strategy_after_round4.md) / [第五轮报告](docs/round5_report.md) / [PDF](docs/round5_report.pdf) / [交接记录](docs/handoffs/issue-9.md)
+- [冻结协议](docs/round5_preregistration.md)、[完整统计](docs/results/round5/tables.md)、[事后物理见证及边界](docs/theory_round5.md)
+
+完成80组共享/独立 × Adam/L-BFGS 对照及一次同机重跑。低场 Transformer 的可靠拟合种子数依次为0/5、3/5、0/5、5/5；
+独立 Adam 仍失败，故共享并非失败必要条件；独立 L-BFGS 的收益仍混有容量与更新分配差异。
+强 Ritz 基线进一步要求后续研究证明共享网络的查询总成本价值。暂缓主动选点和局部缩放扫描，下一门槛为 SR、容量/更新控制与新尺寸验证。
+全部2840行指标和振幅公开，复核：`.venv\Scripts\python.exe scripts/verify_round5.py`。课程原始多 h、内插/外推证据保持独立入口。
 
 ## 第四轮研究入口（Issue #7，待独立复核）
 

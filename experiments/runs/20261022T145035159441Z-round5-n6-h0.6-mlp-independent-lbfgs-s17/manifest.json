@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "run_id": "20261022T145035159441Z-round5-n6-h0.6-mlp-independent-lbfgs-s17",
+  "created_at_utc": "20261022T145035159441Z",
+  "status": "completed",
+  "owner": "Bian-M-X/Codex",
+  "issue": 9,
+  "git_commit": "2acdc205d9fcb46335547216dc73d4d7c04abc0d",
+  "seed": 17,
+  "question": "Does training-anchor failure persist without sharing and under a budgeted optimizer control?",
+  "job": {
+    "h": 0.6,
+    "architecture": "mlp",
+    "seed": 17,
+    "sharing": "independent",
+    "optimizer": "lbfgs"
+  },
+  "model": {
+    "architecture": "mlp",
+    "sharing": "independent",
+    "optimizer": "lbfgs",
+    "condition_scale": 1.0,
+    "checkpoint": "final accepted",
+    "parameters_per_model": 1569,
+    "model_count": 3,
+    "total_parameters": 4707
+  },
+  "hamiltonian": {
+    "n": 6,
+    "h": 0.6,
+    "lambda_value": "variable",
+    "boundary": "open",
+    "J": 1,
+    "basis": "MSB left; Z(0)=+1"
+  },
+  "parameter_split": {
+    "train": [
+      -0.0625,
+      0.0,
+      0.0625
+    ],
+    "validation": [],
+    "test": [
+      -0.057,
+      -0.035,
+      -0.01,
+      -0.0025,
+      -0.0005,
+      0.0005,
+      0.0025,
+      0.01,
+      0.035,
+      0.057
+    ]
+  },
+  "command": "python scripts/run_round5.py --h 0.6 --arch mlp --seed 17 --sharing independent --optimizer lbfgs --tag round5",
+  "environment": {
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "cpu",
+    "dtype": "float64",
+    "torch_threads": 1
+  },
+  "budget": {
+    "training_forward_h_actions": 3600,
+    "training_backward_h_actions": 3600,
+    "total_training_h_actions": 7200,
+    "training_model_calls": 3600,
+    "closure_evaluations": 3600,
+    "optimizer_steps_completed": 1728,
+    "discarded_final_step_evaluations": 1,
+    "validation_h_actions": 0,
+    "evaluation_model_calls": 3,
+    "evaluation_h_actions": 58,
+    "postprocessing_h_actions": 39,
+    "exact_diagonalizations": 13,
+    "fit_seconds": 3.520911999999953,
+    "evaluation_seconds": 0.010776700000860728,
+    "wall_seconds": 3.5316889000023366
+  },
+  "oracle_access": {
+    "training": false,
+    "selection": false,
+    "evaluation": "ED after final state freeze",
+    "postprocessing": false
+  },
+  "metrics": {
+    "test/lookup": {
+      "mean_infidelity": 0.002153136220180596,
+      "worst_infidelity": 0.00750557496981008,
+      "mean_energy_error_per_spin": 2.9573478965527755e-05,
+      "worst_correlation_error": 0.10561954041258687,
+      "mean_magnetization_error": 0.047385393683697874
+    },
+    "test/train_span_ritz": {
+      "mean_infidelity": 3.4475043901860403e-06,
+      "worst_infidelity": 1.0847202272401546e-05,
+      "mean_energy_error_per_spin": 1.3393876315159758e-06,
+      "worst_correlation_error": 0.0018723690380113567,
+      "mean_magnetization_error": 0.00023180600955377537
+    },
+    "train/anchor": {
+      "mean_infidelity": 7.431566554361169e-07,
+      "worst_infidelity": 1.646392020937526e-06,
+      "mean_energy_error_per_spin": 1.1635579666189087e-06,
+      "worst_correlation_error": 0.00015374666962691963,
+      "mean_magnetization_error": 4.771097335649183e-05
+    },
+    "train/lookup": {
+      "mean_infidelity": 7.431566554361169e-07,
+      "worst_infidelity": 1.646392020937526e-06,
+      "mean_energy_error_per_spin": 1.1635579666189087e-06,
+      "worst_correlation_error": 0.00015374666962691963,
+      "mean_magnetization_error": 4.771097335649183e-05
+    },
+    "train/train_span_ritz": {
+      "mean_infidelity": 7.841659129074566e-07,
+      "worst_infidelity": 1.7578281985564104e-06,
+      "mean_energy_error_per_spin": 1.1573237010706646e-06,
+      "worst_correlation_error": 0.00011769141063988631,
+      "mean_magnetization_error": 0.00012686470202764402
+    }
+  },
+  "artifacts": [
+    "config.json",
+    "training.json",
+    "metrics.json",
+    "amplitudes.json"
+  ],
+  "notes": "Development diagnostic. Independent uses triple parameters; equal H work is not equal updates or wall compute.",
+  "config_sha256": "a039b250abaf542892335744c8b4be7586fae260e45038c46b7cd924643411fd",
+  "initial_state_sha256": [
+    "25b60f3d5e2a82330cd6d222be5f30e2cc266df50d80d1e867ca8a9026e9bbc4",
+    "25b60f3d5e2a82330cd6d222be5f30e2cc266df50d80d1e867ca8a9026e9bbc4",
+    "25b60f3d5e2a82330cd6d222be5f30e2cc266df50d80d1e867ca8a9026e9bbc4"
+  ],
+  "final_state_sha256": [
+    "5f6c6409ed8650602a66497a04150d30892fce2abd780e6c7829749f7339f205",
+    "27022f9cb64a1f2a054753bf8140f0469b1f287bec5e498528864278c56af7b3",
+    "b61cab86fe13541b0c78c5d706a63dc2ab4f25cacfa760cee6513978a9860985"
+  ]
+}

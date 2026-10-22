@@ -1,0 +1,11 @@
+{
+  "status": "post_hoc_descriptive_not_preregistered",
+  "rows": 240,
+  "extra_h_actions": 0,
+  "extra_ed": 0,
+  "equation": "E(P psi)-E(psi)=-2 lambda <Z1>",
+  "bound": "max(0,2 lambda <Z1>) <= E(psi)-E0",
+  "positive_witness_rows": 20,
+  "zero_field_rows": 80,
+  "limitations": "No tuned threshold, no validated classifier; zero witness does not certify fidelity. Ground energy used only to verify inequality after training."
+}

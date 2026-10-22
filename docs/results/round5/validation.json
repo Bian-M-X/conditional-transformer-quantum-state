@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "date": "2026-10-22",
+  "numerical_source_commit": "2acdc205d9fcb46335547216dc73d4d7c04abc0d",
+  "unit_tests": 26,
+  "unit_tests_skipped": 0,
+  "workspace_manifests": 387,
+  "round_verifiers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "main_jobs": 80,
+  "failed_main_jobs": 0,
+  "metric_rows": 2840,
+  "seed_endpoints": 480,
+  "legacy_exact_pairs": 20,
+  "replay": "exact; same machine; excluded from statistics",
+  "discarded_final_step_closures": 52,
+  "hamiltonian_dtype_fix_exact_regression_matrices": 26,
+  "pdf_pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "pdf_layout": "No clipped text, missing formula glyphs, or overlapping elements in final render",
+  "independent_member_review": false,
+  "sha256": {
+    "docs/round5_report.md": "961291a0fcefd75fd1db7d19b9796d34ba181dd35e3570bdd7afeb95fe93b0fc",
+    "docs/round5_report.pdf": "adcc8662da1578bad95679f0171b90468e428c6d74ad2441d2e538b692c675c8",
+    "docs/strategy_after_round4.md": "9402907d2605db3e63f9857e6d0591c7ee8f30ffd2ecd8901ebf034b1676e157",
+    "docs/round5_preregistration.md": "d338f495cc51307192c7c21ec7b32bd320bfae347d745e59c0a8ce20b1373d31",
+    "experiments/configs/round5.json": "ea109dc64bc3cb135ffe7ba2b876bd6cd9a7b88a5d7c34c677ec53e68bd456dd",
+    "experiments/round5_index.json": "3459069a81a776694453e2c30082b5e1ff852c2ccfa3b32e34d7f888c7b081ac",
+    "docs/results/round5/summary.json": "bfef7a3e870450c2e8c410788be87de1e2564df42e0d55121a34c5d52445832e",
+    "docs/results/round5/all_metrics.csv": "1d3fa3e04599e37529532e5d32eb2dca95d65a3aabd36eef78319ef579880371",
+    "docs/results/round5/route_gate.png": "d4b75e1b3492d05e5098ee9b3ad96f62fe06f67243a6f3e6500a2102b0100c34",
+    "docs/results/round5/posthoc_flip_witness.csv": "d74a7b4d7dd0363664ded46b3cb22f45639d894f790130a16bd3c4e736409ca0"
+  },
+  "notes": [
+    "Initial 26-test suite exposed integer lambda=0 dtype edge case; fixed explicitly to float; all 26 tests then passed. Numerical runs used float lambda and remain unchanged.",
+    "Witness is post hoc and not a frozen acceptance metric.",
+    "All scientific runs use the frozen source; analysis and dtype fix are later changes."
+  ]
+}
