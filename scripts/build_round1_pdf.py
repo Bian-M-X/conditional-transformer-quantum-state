@@ -9,7 +9,7 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle, PageBreak
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -53,6 +53,8 @@ def main():
             ('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]))
         story.extend([table,Spacer(1,8)]);table_rows.clear()
     for line in source.read_text(encoding='utf-8').splitlines():
+        if line.strip() == '<!-- pagebreak -->':
+            flush_paragraph();flush_table();story.append(PageBreak());continue
         if line.startswith('|'):
             flush_paragraph()
             if re.fullmatch(r'[| :\-]+',line):continue

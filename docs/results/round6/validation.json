@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "date": "2026-10-23",
+  "numerical_source_commit": "d420a9df24eb69af8f8219fa46a0882592e321b8",
+  "unit_tests": 29,
+  "unit_tests_skipped": 0,
+  "workspace_manifests": 448,
+  "round_verifiers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "main_jobs": 60,
+  "failed_jobs": 0,
+  "metric_rows": 2260,
+  "new_seed_endpoints": 380,
+  "initial_hash_controls": 40,
+  "replay": "exact same-machine; excluded",
+  "pdf_pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "independent_member_review": false,
+  "main_integration": "Explicitly authorized by user; source includes origin/main19a8683; normal descendant push planned after this validation",
+  "sha256": {
+    "docs/round6_report.md": "499cee5f5254a8378736b4da53f6131cb4f39d0d89b3b454c3345864be5791c4",
+    "docs/round6_report.pdf": "35015dd6566f844df1cb47e05ec80b94bac8173870a5a9823e69dc475a667b62",
+    "docs/theory_round6.md": "366b5bc5cf7ec3bbb6ab7296ff28a40971c6388e309e1ad9707d370240a82340",
+    "docs/round6_preregistration.md": "e96b36c3096b2db696c81fe24257af591537fdbc39647eebd61dc6903758e610",
+    "experiments/configs/round6.json": "f3b383a45a73725943ab172f97c6c5d7f6919b4045436e22967434126895a06f",
+    "experiments/round6_index.json": "6787d0fbe47295f3ab1c642f60f0ed9d35e8690828495f2e7d75320689bf7dee",
+    "docs/results/round6/summary.json": "3bafb28c493fd53e54166290ef5974b1e5155cc715d4e0bfd00845df2a3e2c80",
+    "docs/results/round6/all_metrics.csv": "68ca5e3981d3bfa31a48c7ab383669c6591fb506116e959773d33b7c827e8dc6",
+    "docs/results/round6/sr_capacity_gate.png": "e9dc08d4c6c59012ea4157216ac51ef4561e61f6b229ee461e77bc329e7d5515"
+  },
+  "statistical_checks": [
+    "Unit of replication is seed, not lambda point",
+    "Five seeds per cell; no population-rate guarantee",
+    "Means and SD are descriptive, not confidence intervals",
+    "No p values or significance claims",
+    "No inferential multiple-comparison conclusions",
+    "No pooling h or architecture for a universal scientific effect",
+    "All seeds and adverse tail outcomes retained",
+    "Absolute gate fixed before runs; mean and count reported together",
+    "Approximate parameters and changed initialization are confounds",
+    "Different H/Jacobian/update/wall costs forbid equal-compute claims",
+    "Reused train/test grids are development; no fresh validation or independent reviewer claim"
+  ]
+}

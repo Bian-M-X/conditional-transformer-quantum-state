@@ -6,6 +6,16 @@
 
 **English**: Training Reliability and Amortization Value of Conditional Neural Quantum States near Quasi-Degeneracies
 
+## 第六轮研究入口（Issue #11，SR/容量控制与 main 同步）
+
+- [第六轮报告](docs/round6_report.md) / [PDF](docs/round6_report.pdf) / [交接记录](docs/handoffs/issue-11.md)
+- [冻结协议](docs/round6_preregistration.md)、[SR 推导与数值检查](docs/theory_round6.md)、[完整统计](docs/results/round6/tables.md)、[main 整合授权记录](docs/decisions/0007-round6-main-integration.md)
+
+60组开发对照及一次同机重跑完成。低场加宽共享 MLP/Transformer 达标5/5、4/5；固定设置的 SR 未稳定解决低场问题，独立化也无一致优势。
+加宽 Transformer 虽通过种子数门槛，均值仍被失败种子拉高，不能宣称通用改善。撤回把共享特有失效提升为论文主张的倾向，继续比较强优化、容量与总查询成本。
+复核：`.venv\Scripts\python.exe scripts/verify_round6.py`。29项测试、2260行本轮指标与40个初始化对照；N=8/10与完整成本验证尚未执行。
+用户明确要求本轮上传同步 main；保留远程 README 改动和全部研究历史。main 的整合不代表独立成员科学复核，结论仍为 provisional。
+
 ## 第五轮研究入口（Issue #9，路线决策，待独立复核）
 
 - [前四轮路线评估](docs/strategy_after_round4.md) / [第五轮报告](docs/round5_report.md) / [PDF](docs/round5_report.pdf) / [交接记录](docs/handoffs/issue-9.md)
@@ -101,9 +111,12 @@ docs/
   RESEARCH_LOG.md                 # 重要阶段摘要（不记流水账）
   decisions/0001-collaboration.md # 不可变的决策记录，后续新增文件
   handoffs/_TEMPLATE.md          # Issue 对应的接力记录模板
+  研究主题与预实验报告.docx
 experiments/
   README.md                       # 实验记录标准
   runs/<run_id>/manifest.json     # 每次运行的独立记录
+  预实验1.zip
+  预实验2.zip
 src/                              # 后续模型、训练、评测模块
 scripts/new_run.py                # 为一次实验创建记录
 scripts/validate_workspace.py     # 校验仓库与实验记录结构

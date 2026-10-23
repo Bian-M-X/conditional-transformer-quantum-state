@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "run_id": "20261023T041350825481Z-round6-n6-h0.4-transformer-shared-sr-s43",
+  "created_at_utc": "20261023T041350825481Z",
+  "status": "completed",
+  "owner": "Bian-M-X/Codex",
+  "issue": 11,
+  "git_commit": "d420a9df24eb69af8f8219fa46a0882592e321b8",
+  "seed": 43,
+  "question": "Does a verified SR baseline or approximate capacity control alter training reliability?",
+  "job": {
+    "h": 0.4,
+    "architecture": "transformer",
+    "seed": 43,
+    "sharing": "shared",
+    "optimizer": "sr",
+    "arm": "shared_sr",
+    "width": 16
+  },
+  "model": {
+    "architecture": "transformer",
+    "sharing": "shared",
+    "optimizer": "sr",
+    "condition_scale": 1.0,
+    "checkpoint": "final accepted",
+    "parameters_per_model": 2449,
+    "model_count": 1,
+    "total_parameters": 2449
+  },
+  "hamiltonian": {
+    "n": 6,
+    "h": 0.4,
+    "lambda_value": "variable",
+    "boundary": "open",
+    "J": 1,
+    "basis": "MSB left; Z(0)=+1"
+  },
+  "parameter_split": {
+    "train": [
+      -0.0625,
+      0.0,
+      0.0625
+    ],
+    "validation": [],
+    "test": [
+      -0.057,
+      -0.035,
+      -0.01,
+      -0.0025,
+      -0.0005,
+      0.0005,
+      0.0025,
+      0.01,
+      0.035,
+      0.057
+    ]
+  },
+  "command": "python scripts/run_round6.py --h 0.4 --arch transformer --seed 43 --sharing shared --optimizer sr --tag round6",
+  "environment": {
+    "python": "3.13.9",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "cpu",
+    "dtype": "float64",
+    "torch_threads": 1
+  },
+  "budget": {
+    "training_forward_h_actions": 1800,
+    "training_backward_h_actions": 0,
+    "total_training_h_actions": 1800,
+    "training_model_calls": 1800,
+    "closure_evaluations": 0,
+    "optimizer_steps_completed": 300,
+    "jacobian_rows": 57600,
+    "accepted_sr_steps": 300,
+    "max_solve_dimension": 192,
+    "discarded_final_step_evaluations": 0,
+    "validation_h_actions": 0,
+    "evaluation_model_calls": 13,
+    "evaluation_h_actions": 84,
+    "postprocessing_h_actions": 39,
+    "exact_diagonalizations": 13,
+    "fit_seconds": 9.246549800000025,
+    "evaluation_seconds": 0.016309799999930874,
+    "wall_seconds": 9.262859800000001
+  },
+  "oracle_access": {
+    "training": false,
+    "selection": false,
+    "evaluation": "ED after final state freeze",
+    "postprocessing": false
+  },
+  "metrics": {
+    "test/direct": {
+      "mean_infidelity": 0.05633627482364856,
+      "worst_infidelity": 0.26059686676904825,
+      "mean_energy_error_per_spin": 0.0008096405366514977,
+      "worst_correlation_error": 0.7165628381730165,
+      "mean_magnetization_error": 0.26838912155064476
+    },
+    "test/lookup": {
+      "mean_infidelity": 0.09271944039922443,
+      "worst_infidelity": 0.3601207252237133,
+      "mean_energy_error_per_spin": 0.00041125580770851045,
+      "worst_correlation_error": 0.7279688027612707,
+      "mean_magnetization_error": 0.3360854381458576
+    },
+    "test/train_span_ritz": {
+      "mean_infidelity": 5.5227041586303206e-05,
+      "worst_infidelity": 0.00022465846018449032,
+      "mean_energy_error_per_spin": 4.895428533050843e-06,
+      "worst_correlation_error": 0.021246392493951216,
+      "mean_magnetization_error": 0.005066037365733686
+    },
+    "train/anchor": {
+      "mean_infidelity": 0.009904103259316602,
+      "worst_infidelity": 0.029669523334998615,
+      "mean_energy_error_per_spin": 1.2661285922218232e-05,
+      "worst_correlation_error": 0.09642080649336249,
+      "mean_magnetization_error": 0.10397350151771721
+    },
+    "train/direct": {
+      "mean_infidelity": 0.009904103259316602,
+      "worst_infidelity": 0.029669523334998615,
+      "mean_energy_error_per_spin": 1.2661285922218232e-05,
+      "worst_correlation_error": 0.09642080649336249,
+      "mean_magnetization_error": 0.10397350151771721
+    },
+    "train/lookup": {
+      "mean_infidelity": 0.009904103259316602,
+      "worst_infidelity": 0.029669523334998615,
+      "mean_energy_error_per_spin": 1.2661285922218232e-05,
+      "worst_correlation_error": 0.09642080649336249,
+      "mean_magnetization_error": 0.10397350151771721
+    },
+    "train/train_span_ritz": {
+      "mean_infidelity": 2.168856910430191e-05,
+      "worst_infidelity": 6.156614453078912e-05,
+      "mean_energy_error_per_spin": 1.4985823390607008e-06,
+      "worst_correlation_error": 0.00018805302487490128,
+      "mean_magnetization_error": 0.004168775985047848
+    }
+  },
+  "artifacts": [
+    "config.json",
+    "training.json",
+    "metrics.json",
+    "amplitudes.json"
+  ],
+  "notes": "Development diagnostic. SR Jacobians add substantial cost; H work is not total compute. Wide models approximately match independent total parameters, not initial functions.",
+  "config_sha256": "d13df14fe19072b51128780269e88cd617980b3735a8961e24e8fa60bd5af942",
+  "initial_state_sha256": [
+    "6b15623a5e7ccda6bea658eddeba9ec767bf30b623764955591ef2c5e05c8af9"
+  ],
+  "final_state_sha256": [
+    "23dceebd81a8a0dab721536704db5557d07942faf96dea573c761e28b2e2f0c9"
+  ]
+}

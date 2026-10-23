@@ -1,0 +1,2719 @@
+[
+  {
+    "history": [
+      {
+        "step": 1,
+        "energy_before": -0.6053816542417004,
+        "energy_after": -0.7679540716110415,
+        "accepted_rate": 0.37127246994033,
+        "trials": 1,
+        "linear_residual": 1.2461339171763304e-13,
+        "tangent_velocity": 0.26934396729192384
+      },
+      {
+        "step": 2,
+        "energy_before": -0.7679540716110415,
+        "energy_after": -0.8011527796537626,
+        "accepted_rate": 0.3212796546902939,
+        "trials": 1,
+        "linear_residual": 2.098694342795731e-13,
+        "tangent_velocity": 0.3112553146149191
+      },
+      {
+        "step": 3,
+        "energy_before": -0.8011527796537625,
+        "energy_after": -0.8590347650316662,
+        "accepted_rate": 0.3568408691702904,
+        "trials": 1,
+        "linear_residual": 3.076690230719464e-14,
+        "tangent_velocity": 0.28023695893498773
+      },
+      {
+        "step": 4,
+        "energy_before": -0.8590347650316662,
+        "energy_after": -0.9003316679566487,
+        "accepted_rate": 0.45630220971062607,
+        "trials": 1,
+        "linear_residual": 1.210507116741302e-13,
+        "tangent_velocity": 0.21915300402208696
+      },
+      {
+        "step": 5,
+        "energy_before": -0.9003316679566485,
+        "energy_after": -0.9283826000688012,
+        "accepted_rate": 0.6191905808588585,
+        "trials": 1,
+        "linear_residual": 3.8827331310868195e-14,
+        "tangent_velocity": 0.16150116473234033
+      },
+      {
+        "step": 6,
+        "energy_before": -0.9283826000688012,
+        "energy_after": -0.9455778001179657,
+        "accepted_rate": 0.9174729149792324,
+        "trials": 1,
+        "linear_residual": 1.0090864482748809e-13,
+        "tangent_velocity": 0.10899504319673957
+      },
+      {
+        "step": 7,
+        "energy_before": -0.9455778001179657,
+        "energy_after": -0.9522864605673521,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.424757239493281e-14,
+        "tangent_velocity": 0.06487896516580391
+      },
+      {
+        "step": 8,
+        "energy_before": -0.9522864605673521,
+        "energy_after": -0.9553334175328062,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.599750316278469e-13,
+        "tangent_velocity": 0.04291244989020924
+      },
+      {
+        "step": 9,
+        "energy_before": -0.9553334175328062,
+        "energy_after": -0.9569943505629187,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.031821789972954e-13,
+        "tangent_velocity": 0.031196201623914357
+      },
+      {
+        "step": 10,
+        "energy_before": -0.9569943505629189,
+        "energy_after": -0.9579749432643309,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.31036944450588e-13,
+        "tangent_velocity": 0.023811189291188972
+      },
+      {
+        "step": 11,
+        "energy_before": -0.9579749432643311,
+        "energy_after": -0.9585877723177455,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.548924796426092e-13,
+        "tangent_velocity": 0.018785232864046725
+      },
+      {
+        "step": 12,
+        "energy_before": -0.9585877723177454,
+        "energy_after": -0.9589901750969226,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.422866749836001e-13,
+        "tangent_velocity": 0.01518712375586869
+      },
+      {
+        "step": 13,
+        "energy_before": -0.9589901750969226,
+        "energy_after": -0.9592675609177421,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.057658599261243e-13,
+        "tangent_velocity": 0.01253503697329733
+      },
+      {
+        "step": 14,
+        "energy_before": -0.9592675609177421,
+        "energy_after": -0.9594680724923693,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.116451943484615e-12,
+        "tangent_velocity": 0.010553209273336884
+      },
+      {
+        "step": 15,
+        "energy_before": -0.9594680724923692,
+        "energy_after": -0.9596198833568605,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.778898556623621e-13,
+        "tangent_velocity": 0.009072989066313271
+      },
+      {
+        "step": 16,
+        "energy_before": -0.9596198833568605,
+        "energy_after": -0.9597404079293775,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.0495463434391538e-12,
+        "tangent_velocity": 0.007987062320038539
+      },
+      {
+        "step": 17,
+        "energy_before": -0.9597404079293775,
+        "energy_after": -0.9598410064974238,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.0844446170971435e-12,
+        "tangent_velocity": 0.007217391506218005
+      },
+      {
+        "step": 18,
+        "energy_before": -0.9598410064974238,
+        "energy_after": -0.9599291908323734,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.4451322003889908e-13,
+        "tangent_velocity": 0.006694240528273536
+      },
+      {
+        "step": 19,
+        "energy_before": -0.9599291908323736,
+        "energy_after": -0.9600098422234757,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1536451648881026e-12,
+        "tangent_velocity": 0.006353055648708018
+      },
+      {
+        "step": 20,
+        "energy_before": -0.9600098422234757,
+        "energy_after": -0.9600860613398261,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.526538007625951e-13,
+        "tangent_velocity": 0.0061390813388998095
+      },
+      {
+        "step": 21,
+        "energy_before": -0.9600860613398261,
+        "energy_after": -0.9601597807498213,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1839506087166315e-12,
+        "tangent_velocity": 0.00601019593752824
+      },
+      {
+        "step": 22,
+        "energy_before": -0.9601597807498213,
+        "energy_after": -0.9602321844782756,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.4292589628696305e-12,
+        "tangent_velocity": 0.005936348764861147
+      },
+      {
+        "step": 23,
+        "energy_before": -0.9602321844782756,
+        "energy_after": -0.9603039833418304,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.5190800187817067e-13,
+        "tangent_velocity": 0.005897201782028538
+      },
+      {
+        "step": 24,
+        "energy_before": -0.9603039833418304,
+        "energy_after": -0.9603755914440044,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.385278900288274e-13,
+        "tangent_velocity": 0.005879473920603663
+      },
+      {
+        "step": 25,
+        "energy_before": -0.9603755914440044,
+        "energy_after": -0.9604472383091291,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.870694799398868e-12,
+        "tangent_velocity": 0.005874702955647503
+      },
+      {
+        "step": 26,
+        "energy_before": -0.9604472383091291,
+        "energy_after": -0.9605190404800092,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7207483615001505e-13,
+        "tangent_velocity": 0.005877593150218403
+      },
+      {
+        "step": 27,
+        "energy_before": -0.9605190404800092,
+        "energy_after": -0.960591048293446,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.7646781876155376e-12,
+        "tangent_velocity": 0.00588487402046714
+      },
+      {
+        "step": 28,
+        "energy_before": -0.9605910482934458,
+        "energy_after": -0.9606632773008542,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.47528234424533e-13,
+        "tangent_velocity": 0.005894531401532435
+      },
+      {
+        "step": 29,
+        "energy_before": -0.9606632773008541,
+        "energy_after": -0.9607357281310555,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.669832568911789e-13,
+        "tangent_velocity": 0.0059052865614383256
+      },
+      {
+        "step": 30,
+        "energy_before": -0.9607357281310555,
+        "energy_after": -0.9608083943038056,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.4511098228316477e-12,
+        "tangent_velocity": 0.005916246578343585
+      },
+      {
+        "step": 31,
+        "energy_before": -0.9608083943038054,
+        "energy_after": -0.9608812588306245,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.317641943150111e-13,
+        "tangent_velocity": 0.005926702161528809
+      },
+      {
+        "step": 32,
+        "energy_before": -0.9608812588306243,
+        "energy_after": -0.9609542877214584,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.3847788652254416e-12,
+        "tangent_velocity": 0.005936060971704276
+      },
+      {
+        "step": 33,
+        "energy_before": -0.9609542877214584,
+        "energy_after": -0.961027430331916,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.745298054382904e-13,
+        "tangent_velocity": 0.005943858540012928
+      },
+      {
+        "step": 34,
+        "energy_before": -0.961027430331916,
+        "energy_after": -0.961100626855861,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.378822867273025e-13,
+        "tangent_velocity": 0.005949767628421506
+      },
+      {
+        "step": 35,
+        "energy_before": -0.961100626855861,
+        "energy_after": -0.9611738159309127,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.2327573651404132e-13,
+        "tangent_velocity": 0.00595357860715778
+      },
+      {
+        "step": 36,
+        "energy_before": -0.9611738159309127,
+        "energy_after": -0.9612469383411786,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.061303363263045e-13,
+        "tangent_velocity": 0.005955168439479896
+      },
+      {
+        "step": 37,
+        "energy_before": -0.9612469383411786,
+        "energy_after": -0.961319937732603,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.759603874717507e-13,
+        "tangent_velocity": 0.005954473788504714
+      },
+      {
+        "step": 38,
+        "energy_before": -0.9613199377326032,
+        "energy_after": -0.9613927603283209,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.5859228909380464e-13,
+        "tangent_velocity": 0.005951471443586964
+      },
+      {
+        "step": 39,
+        "energy_before": -0.9613927603283211,
+        "energy_after": -0.9614653546224136,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.822613474157169e-13,
+        "tangent_velocity": 0.005946164938239107
+      },
+      {
+        "step": 40,
+        "energy_before": -0.9614653546224136,
+        "energy_after": -0.9615376711921577,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.464435743077324e-13,
+        "tangent_velocity": 0.00593857560154987
+      },
+      {
+        "step": 41,
+        "energy_before": -0.9615376711921576,
+        "energy_after": -0.9616096625222533,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.848179042587964e-13,
+        "tangent_velocity": 0.005928736482864932
+      },
+      {
+        "step": 42,
+        "energy_before": -0.9616096625222532,
+        "energy_after": -0.9616812827775236,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.9148448820348903e-12,
+        "tangent_velocity": 0.005916688126856747
+      },
+      {
+        "step": 43,
+        "energy_before": -0.9616812827775236,
+        "energy_after": -0.9617524875429181,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.352041190267533e-13,
+        "tangent_velocity": 0.005902475666296
+      },
+      {
+        "step": 44,
+        "energy_before": -0.9617524875429182,
+        "energy_after": -0.961823233586296,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.68638137066558e-13,
+        "tangent_velocity": 0.005886146944450073
+      },
+      {
+        "step": 45,
+        "energy_before": -0.961823233586296,
+        "energy_after": -0.9618934786930363,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.3388675012719603e-12,
+        "tangent_velocity": 0.005867751437179447
+      },
+      {
+        "step": 46,
+        "energy_before": -0.9618934786930363,
+        "energy_after": -0.961963181596608,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.1686988715596037e-13,
+        "tangent_velocity": 0.005847339744420587
+      },
+      {
+        "step": 47,
+        "energy_before": -0.961963181596608,
+        "energy_after": -0.9620323020043989,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.3145146364396074e-12,
+        "tangent_velocity": 0.005824963431502207
+      },
+      {
+        "step": 48,
+        "energy_before": -0.9620323020043989,
+        "energy_after": -0.9621008007012991,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.260208600267858e-13,
+        "tangent_velocity": 0.005800675039847679
+      },
+      {
+        "step": 49,
+        "energy_before": -0.9621008007012991,
+        "energy_after": -0.962168639705444,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.908119842113842e-13,
+        "tangent_velocity": 0.005774528140052849
+      },
+      {
+        "step": 50,
+        "energy_before": -0.962168639705444,
+        "energy_after": -0.9622357824490112,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7523882633602667e-13,
+        "tangent_velocity": 0.005746577353443165
+      },
+      {
+        "step": 51,
+        "energy_before": -0.9622357824490112,
+        "energy_after": -0.962302193959584,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.5905938802125465e-12,
+        "tangent_velocity": 0.005716878311952128
+      },
+      {
+        "step": 52,
+        "energy_before": -0.9623021939595838,
+        "energy_after": -0.9623678410225094,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.4844947617918516e-13,
+        "tangent_velocity": 0.005685487555311142
+      },
+      {
+        "step": 53,
+        "energy_before": -0.9623678410225095,
+        "energy_after": -0.9624326923107113,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.357197000898362e-13,
+        "tangent_velocity": 0.005652462382180503
+      },
+      {
+        "step": 54,
+        "energy_before": -0.9624326923107113,
+        "energy_after": -0.9624967184747226,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.432407454572652e-13,
+        "tangent_velocity": 0.005617860678637062
+      },
+      {
+        "step": 55,
+        "energy_before": -0.9624967184747227,
+        "energy_after": -0.9625598921916841,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7317420817092446e-12,
+        "tangent_velocity": 0.005581740748830367
+      },
+      {
+        "step": 56,
+        "energy_before": -0.9625598921916841,
+        "energy_after": -0.9626221881770648,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.3548270387620758e-12,
+        "tangent_velocity": 0.00554416116916345
+      },
+      {
+        "step": 57,
+        "energy_before": -0.9626221881770648,
+        "energy_after": -0.9626835831665139,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.0918618148884543e-12,
+        "tangent_velocity": 0.005505180682420718
+      },
+      {
+        "step": 58,
+        "energy_before": -0.9626835831665139,
+        "energy_after": -0.9627440558772092,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.519812857726083e-13,
+        "tangent_velocity": 0.005464858141734141
+      },
+      {
+        "step": 59,
+        "energy_before": -0.962744055877209,
+        "energy_after": -0.9628035869583272,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.034759957141549e-13,
+        "tangent_velocity": 0.005423252507638683
+      },
+      {
+        "step": 60,
+        "energy_before": -0.962803586958327,
+        "energy_after": -0.9628621589390417,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.962431308668701e-13,
+        "tangent_velocity": 0.005380422894018675
+      },
+      {
+        "step": 61,
+        "energy_before": -0.9628621589390418,
+        "energy_after": -0.9629197561802275,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0099784497624364e-12,
+        "tangent_velocity": 0.005336428651656198
+      },
+      {
+        "step": 62,
+        "energy_before": -0.9629197561802275,
+        "energy_after": -0.9629763648333843,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7623974944389522e-12,
+        "tangent_velocity": 0.005291329472288726
+      },
+      {
+        "step": 63,
+        "energy_before": -0.9629763648333843,
+        "energy_after": -0.9630319728077911,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1161746195744054e-12,
+        "tangent_velocity": 0.005245185492076698
+      },
+      {
+        "step": 64,
+        "energy_before": -0.9630319728077911,
+        "energy_after": -0.9630865697449017,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.72622967790698e-13,
+        "tangent_velocity": 0.0051980573720003835
+      },
+      {
+        "step": 65,
+        "energy_before": -0.9630865697449016,
+        "energy_after": -0.9631401469978013,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.4534429997892543e-12,
+        "tangent_velocity": 0.005150006334297356
+      },
+      {
+        "step": 66,
+        "energy_before": -0.9631401469978013,
+        "energy_after": -0.9631926976130399,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.654640201530125e-12,
+        "tangent_velocity": 0.00510109413853421
+      },
+      {
+        "step": 67,
+        "energy_before": -0.9631926976130399,
+        "energy_after": -0.9632442163122761,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.8758147585087727e-12,
+        "tangent_velocity": 0.005051382987099995
+      },
+      {
+        "step": 68,
+        "energy_before": -0.9632442163122762,
+        "energy_after": -0.9632946994715784,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.901896632293997e-13,
+        "tangent_velocity": 0.005000935356617426
+      },
+      {
+        "step": 69,
+        "energy_before": -0.9632946994715784,
+        "energy_after": -0.9633441450967487,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.6442059943448996e-12,
+        "tangent_velocity": 0.0049498137593947805
+      },
+      {
+        "step": 70,
+        "energy_before": -0.9633441450967487,
+        "energy_after": -0.9633925527934372,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.659589440774625e-13,
+        "tangent_velocity": 0.004898080444602842
+      },
+      {
+        "step": 71,
+        "energy_before": -0.9633925527934372,
+        "energy_after": -0.9634399237310265,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7882448734747182e-12,
+        "tangent_velocity": 0.004845797053922057
+      },
+      {
+        "step": 72,
+        "energy_before": -0.9634399237310265,
+        "energy_after": -0.9634862605992488,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.4292802562293434e-12,
+        "tangent_velocity": 0.004793024250071557
+      },
+      {
+        "step": 73,
+        "energy_before": -0.9634862605992486,
+        "energy_after": -0.9635315675563539,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.651355757173472e-12,
+        "tangent_velocity": 0.004739821337777051
+      },
+      {
+        "step": 74,
+        "energy_before": -0.9635315675563539,
+        "energy_after": -0.9635758501674824,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.461362515373664e-13,
+        "tangent_velocity": 0.004686245897895096
+      },
+      {
+        "step": 75,
+        "energy_before": -0.9635758501674824,
+        "energy_after": -0.9636191153318542,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.6269104731326913e-12,
+        "tangent_velocity": 0.004632353453424125
+      },
+      {
+        "step": 76,
+        "energy_before": -0.9636191153318542,
+        "energy_after": -0.9636613711975882,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.220922525682161e-12,
+        "tangent_velocity": 0.004578197183976406
+      },
+      {
+        "step": 77,
+        "energy_before": -0.9636613711975882,
+        "energy_after": -0.9637026270634529,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.3357898063410095e-13,
+        "tangent_velocity": 0.004523827700899165
+      },
+      {
+        "step": 78,
+        "energy_before": -0.9637026270634529,
+        "energy_after": -0.9637428932676398,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.9397065289716344e-12,
+        "tangent_velocity": 0.0044692928909995985
+      },
+      {
+        "step": 79,
+        "energy_before": -0.9637428932676398,
+        "energy_after": -0.963782181064663,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.726417578792586e-12,
+        "tangent_velocity": 0.004414637830950906
+      },
+      {
+        "step": 80,
+        "energy_before": -0.963782181064663,
+        "energy_after": -0.9638205024926284,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1352172141706444e-12,
+        "tangent_velocity": 0.00435990477086495
+      },
+      {
+        "step": 81,
+        "energy_before": -0.9638205024926284,
+        "energy_after": -0.9638578702342587,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.286847469449945e-13,
+        "tangent_velocity": 0.0043051331807086035
+      },
+      {
+        "step": 82,
+        "energy_before": -0.9638578702342588,
+        "energy_after": -0.9638942974760982,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.935015281098007e-12,
+        "tangent_velocity": 0.004250359851239052
+      },
+      {
+        "step": 83,
+        "energy_before": -0.9638942974760982,
+        "energy_after": -0.9639297977711482,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.8890084049706316e-12,
+        "tangent_velocity": 0.004195619039645846
+      },
+      {
+        "step": 84,
+        "energy_before": -0.9639297977711482,
+        "energy_after": -0.9639643849107457,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.4158988562928837e-12,
+        "tangent_velocity": 0.004140942649804833
+      },
+      {
+        "step": 85,
+        "energy_before": -0.9639643849107454,
+        "energy_after": -0.9639980728116783,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.139212400293477e-12,
+        "tangent_velocity": 0.004086360437781661
+      },
+      {
+        "step": 86,
+        "energy_before": -0.9639980728116782,
+        "energy_after": -0.9640308754242798,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.531365944514681e-12,
+        "tangent_velocity": 0.004031900234686846
+      },
+      {
+        "step": 87,
+        "energy_before": -0.9640308754242798,
+        "energy_after": -0.9640628066664454,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.02595213124921e-12,
+        "tangent_velocity": 0.003977588178908294
+      },
+      {
+        "step": 88,
+        "energy_before": -0.9640628066664455,
+        "energy_after": -0.9640938803870842,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.8042092741781044e-12,
+        "tangent_velocity": 0.003923448952500041
+      },
+      {
+        "step": 89,
+        "energy_before": -0.9640938803870842,
+        "energy_after": -0.9641241103604133,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.19447219718539e-12,
+        "tangent_velocity": 0.0038695060153458105
+      },
+      {
+        "step": 90,
+        "energy_before": -0.9641241103604132,
+        "energy_after": -0.9641535103098141,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.0443055526772654e-12,
+        "tangent_velocity": 0.003815781830346374
+      },
+      {
+        "step": 91,
+        "energy_before": -0.9641535103098141,
+        "energy_after": -0.9641820939569267,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.9196745872653e-12,
+        "tangent_velocity": 0.0037622980726356395
+      },
+      {
+        "step": 92,
+        "energy_before": -0.9641820939569267,
+        "energy_after": -0.9642098750887288,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.429748223388579e-12,
+        "tangent_velocity": 0.0037090758131346994
+      },
+      {
+        "step": 93,
+        "energy_before": -0.9642098750887288,
+        "energy_after": -0.9642368676330805,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1769839135121822e-12,
+        "tangent_velocity": 0.0036561356669578653
+      },
+      {
+        "step": 94,
+        "energy_before": -0.9642368676330805,
+        "energy_after": -0.9642630857321796,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.52914865132064e-12,
+        "tangent_velocity": 0.003603497896201082
+      },
+      {
+        "step": 95,
+        "energy_before": -0.9642630857321796,
+        "energy_after": -0.9642885438039509,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.397380249907319e-13,
+        "tangent_velocity": 0.003551182461928436
+      },
+      {
+        "step": 96,
+        "energy_before": -0.964288543803951,
+        "energy_after": -0.9643132565835543,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0296784325629855e-12,
+        "tangent_velocity": 0.0034992090237839666
+      },
+      {
+        "step": 97,
+        "energy_before": -0.9643132565835543,
+        "energy_after": -0.964337239140549,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.111236370771859e-12,
+        "tangent_velocity": 0.0034475968938718054
+      },
+      {
+        "step": 98,
+        "energy_before": -0.964337239140549,
+        "energy_after": -0.9643605068710318,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.004067814904151e-12,
+        "tangent_velocity": 0.0033963649576544673
+      },
+      {
+        "step": 99,
+        "energy_before": -0.9643605068710318,
+        "energy_after": -0.9643830754674756,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.906864132753775e-13,
+        "tangent_velocity": 0.003345531577875681
+      },
+      {
+        "step": 100,
+        "energy_before": -0.9643830754674756,
+        "energy_after": -0.9644049608713718,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.290215110444149e-13,
+        "tangent_velocity": 0.003295114497748422
+      },
+      {
+        "step": 101,
+        "energy_before": -0.9644049608713718,
+        "energy_after": -0.9644261792148354,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.1247243726052483e-12,
+        "tangent_velocity": 0.003245130754628922
+      },
+      {
+        "step": 102,
+        "energy_before": -0.9644261792148354,
+        "energy_after": -0.964446746757167,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.4571829659597404e-12,
+        "tangent_velocity": 0.0031955966104611445
+      },
+      {
+        "step": 103,
+        "energy_before": -0.964446746757167,
+        "energy_after": -0.9644666798213347,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.8742016083770914e-12,
+        "tangent_velocity": 0.0031465274989170553
+      },
+      {
+        "step": 104,
+        "energy_before": -0.9644666798213346,
+        "energy_after": -0.9644859947338782,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0281561477073433e-12,
+        "tangent_velocity": 0.0030979379856523426
+      },
+      {
+        "step": 105,
+        "energy_before": -0.9644859947338782,
+        "energy_after": -0.9645047077703063,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.839952969653314e-12,
+        "tangent_velocity": 0.003049841736789182
+      },
+      {
+        "step": 106,
+        "energy_before": -0.9645047077703065,
+        "energy_after": -0.9645228351068377,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.6252617303705582e-12,
+        "tangent_velocity": 0.003002251491108359
+      },
+      {
+        "step": 107,
+        "energy_before": -0.9645228351068377,
+        "energy_after": -0.9645403927785203,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.3420897461205708e-12,
+        "tangent_velocity": 0.0029551790338749394
+      },
+      {
+        "step": 108,
+        "energy_before": -0.9645403927785204,
+        "energy_after": -0.9645573966432778,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7861932004303879e-12,
+        "tangent_velocity": 0.002908635171817054
+      },
+      {
+        "step": 109,
+        "energy_before": -0.9645573966432778,
+        "energy_after": -0.9645738623512328,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.14907029704032e-13,
+        "tangent_velocity": 0.0028626297106176934
+      },
+      {
+        "step": 110,
+        "energy_before": -0.9645738623512328,
+        "energy_after": -0.9645898053186522,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.5930528119141745e-12,
+        "tangent_velocity": 0.0028171714372978783
+      },
+      {
+        "step": 111,
+        "energy_before": -0.964589805318652,
+        "energy_after": -0.9646052407059226,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.036373639455685e-12,
+        "tangent_velocity": 0.0027722681097604434
+      },
+      {
+        "step": 112,
+        "energy_before": -0.9646052407059228,
+        "energy_after": -0.9646201833990949,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.8684578670058385e-12,
+        "tangent_velocity": 0.0027279264557440405
+      },
+      {
+        "step": 113,
+        "energy_before": -0.9646201833990949,
+        "energy_after": -0.9646346479946226,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.010729717241623e-13,
+        "tangent_velocity": 0.002684152182095597
+      },
+      {
+        "step": 114,
+        "energy_before": -0.9646346479946226,
+        "energy_after": -0.9646486487870064,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.3147582029773402e-12,
+        "tangent_velocity": 0.00264094999495117
+      },
+      {
+        "step": 115,
+        "energy_before": -0.9646486487870063,
+        "energy_after": -0.9646621997590957,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1541566163047383e-12,
+        "tangent_velocity": 0.002598323630095995
+      },
+      {
+        "step": 116,
+        "energy_before": -0.964662199759096,
+        "energy_after": -0.964675314574825,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.4176480681452173e-12,
+        "tangent_velocity": 0.002556275892427968
+      },
+      {
+        "step": 117,
+        "energy_before": -0.9646753145748251,
+        "energy_after": -0.9646880065741644,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.52188449918235e-12,
+        "tangent_velocity": 0.0025148087027440603
+      },
+      {
+        "step": 118,
+        "energy_before": -0.9646880065741644,
+        "energy_after": -0.9647002887700625,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.5533526933500814e-12,
+        "tangent_velocity": 0.002473923149916099
+      },
+      {
+        "step": 119,
+        "energy_before": -0.9647002887700626,
+        "energy_after": -0.9647121738471554,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.124285190745912e-13,
+        "tangent_velocity": 0.0024336195465740657
+      },
+      {
+        "step": 120,
+        "energy_before": -0.9647121738471554,
+        "energy_after": -0.9647236741620134,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.811132969295186e-13,
+        "tangent_velocity": 0.0023938974863680247
+      },
+      {
+        "step": 121,
+        "energy_before": -0.9647236741620134,
+        "energy_after": -0.9647348017447054,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.4998843242182309e-12,
+        "tangent_velocity": 0.002354755901322283
+      },
+      {
+        "step": 122,
+        "energy_before": -0.9647348017447057,
+        "energy_after": -0.9647455683014652,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.4680652515811855e-12,
+        "tangent_velocity": 0.0023161931177798126
+      },
+      {
+        "step": 123,
+        "energy_before": -0.9647455683014652,
+        "energy_after": -0.9647559852182632,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.4537370610958695e-12,
+        "tangent_velocity": 0.0022782069101953406
+      },
+      {
+        "step": 124,
+        "energy_before": -0.9647559852182633,
+        "energy_after": -0.9647660635651102,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.2727586197517593e-12,
+        "tangent_velocity": 0.002240794551826174
+      },
+      {
+        "step": 125,
+        "energy_before": -0.9647660635651102,
+        "energy_after": -0.9647758141009296,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.242735636380506e-13,
+        "tangent_velocity": 0.002203952862107818
+      },
+      {
+        "step": 126,
+        "energy_before": -0.9647758141009296,
+        "energy_after": -0.9647852472788686,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.1762898052524935e-12,
+        "tangent_velocity": 0.0021676782504145868
+      },
+      {
+        "step": 127,
+        "energy_before": -0.9647852472788686,
+        "energy_after": -0.964794373251935,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.2408657458900605e-12,
+        "tangent_velocity": 0.0021319667561237304
+      },
+      {
+        "step": 128,
+        "energy_before": -0.9647943732519347,
+        "energy_after": -0.9648032018788619,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.3782817405620863e-12,
+        "tangent_velocity": 0.0020968140853124145
+      },
+      {
+        "step": 129,
+        "energy_before": -0.9648032018788619,
+        "energy_after": -0.9648117427301343,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.045130975915513e-12,
+        "tangent_velocity": 0.0020622156439361206
+      },
+      {
+        "step": 130,
+        "energy_before": -0.964811742730134,
+        "energy_after": -0.964820005094106,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.5684831313385517e-12,
+        "tangent_velocity": 0.0020281665680785812
+      },
+      {
+        "step": 131,
+        "energy_before": -0.9648200050941061,
+        "energy_after": -0.9648279979831758,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.7492395974998875e-12,
+        "tangent_velocity": 0.001994661751398859
+      },
+      {
+        "step": 132,
+        "energy_before": -0.9648279979831756,
+        "energy_after": -0.9648357301399707,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.9095773238898195e-12,
+        "tangent_velocity": 0.001961695869955586
+      },
+      {
+        "step": 133,
+        "energy_before": -0.9648357301399707,
+        "energy_after": -0.9648432100435301,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.7196473436684984e-12,
+        "tangent_velocity": 0.0019292634050069553
+      },
+      {
+        "step": 134,
+        "energy_before": -0.9648432100435301,
+        "energy_after": -0.964850445915455,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.036872386913119e-12,
+        "tangent_velocity": 0.0018973586636415968
+      },
+      {
+        "step": 135,
+        "energy_before": -0.964850445915455,
+        "energy_after": -0.9648574457260192,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.876523813230492e-13,
+        "tangent_velocity": 0.0018659757977864686
+      },
+      {
+        "step": 136,
+        "energy_before": -0.9648574457260192,
+        "energy_after": -0.9648642172002333,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.2469573026898772e-12,
+        "tangent_velocity": 0.0018351088217562815
+      },
+      {
+        "step": 137,
+        "energy_before": -0.9648642172002333,
+        "energy_after": -0.9648707678238506,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.296409364571418e-12,
+        "tangent_velocity": 0.0018047516283657586
+      },
+      {
+        "step": 138,
+        "energy_before": -0.9648707678238506,
+        "energy_after": -0.9648771048493189,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.9530160172975076e-12,
+        "tangent_velocity": 0.0017748980039725068
+      },
+      {
+        "step": 139,
+        "energy_before": -0.9648771048493189,
+        "energy_after": -0.964883235301668,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.0402531342289715e-12,
+        "tangent_velocity": 0.0017455416424154299
+      },
+      {
+        "step": 140,
+        "energy_before": -0.9648832353016679,
+        "energy_after": -0.9648891659843404,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.319992547428915e-12,
+        "tangent_velocity": 0.0017166761581307566
+      },
+      {
+        "step": 141,
+        "energy_before": -0.9648891659843403,
+        "energy_after": -0.9648949034849584,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.353785736137005e-12,
+        "tangent_velocity": 0.001688295098472509
+      },
+      {
+        "step": 142,
+        "energy_before": -0.9648949034849584,
+        "energy_after": -0.9649004541810284,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.801068350397804e-13,
+        "tangent_velocity": 0.0016603919551314828
+      },
+      {
+        "step": 143,
+        "energy_before": -0.9649004541810284,
+        "energy_after": -0.9649058242455837,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.906522498681468e-12,
+        "tangent_velocity": 0.001632960175113056
+      },
+      {
+        "step": 144,
+        "energy_before": -0.9649058242455837,
+        "energy_after": -0.9649110196527618,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.6077385179560404e-12,
+        "tangent_velocity": 0.0016059931709472772
+      },
+      {
+        "step": 145,
+        "energy_before": -0.9649110196527616,
+        "energy_after": -0.9649160461833161,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.145081219103122e-12,
+        "tangent_velocity": 0.001579484330298415
+      },
+      {
+        "step": 146,
+        "energy_before": -0.9649160461833161,
+        "energy_after": -0.9649209094300617,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.346635265453197e-12,
+        "tangent_velocity": 0.0015534270251772353
+      },
+      {
+        "step": 147,
+        "energy_before": -0.9649209094300617,
+        "energy_after": -0.9649256148032462,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.117720184232561e-12,
+        "tangent_velocity": 0.0015278146204464108
+      },
+      {
+        "step": 148,
+        "energy_before": -0.9649256148032461,
+        "energy_after": -0.9649301675358511,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.995027723357915e-12,
+        "tangent_velocity": 0.0015026404819315038
+      },
+      {
+        "step": 149,
+        "energy_before": -0.9649301675358511,
+        "energy_after": -0.964934572688812,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.4729013245482248e-12,
+        "tangent_velocity": 0.0014778979839882914
+      },
+      {
+        "step": 150,
+        "energy_before": -0.964934572688812,
+        "energy_after": -0.9649388351561612,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.891596053783772e-12,
+        "tangent_velocity": 0.0014535805166167948
+      },
+      {
+        "step": 151,
+        "energy_before": -0.9649388351561612,
+        "energy_after": -0.964942959670081,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.868051548280619e-12,
+        "tangent_velocity": 0.001429681492072317
+      },
+      {
+        "step": 152,
+        "energy_before": -0.964942959670081,
+        "energy_after": -0.9649469508058705,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.1590539339204656e-12,
+        "tangent_velocity": 0.001406194351053164
+      },
+      {
+        "step": 153,
+        "energy_before": -0.9649469508058703,
+        "energy_after": -0.9649508129868157,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.4020997355569516e-12,
+        "tangent_velocity": 0.0013831125684055862
+      },
+      {
+        "step": 154,
+        "energy_before": -0.9649508129868157,
+        "energy_after": -0.9649545504889646,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.2754404824292646e-12,
+        "tangent_velocity": 0.0013604296584282124
+      },
+      {
+        "step": 155,
+        "energy_before": -0.9649545504889646,
+        "energy_after": -0.9649581674457967,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.2454961286525363e-11,
+        "tangent_velocity": 0.0013381391797037238
+      },
+      {
+        "step": 156,
+        "energy_before": -0.9649581674457967,
+        "energy_after": -0.9649616678527894,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.192657054410585e-12,
+        "tangent_velocity": 0.0013162347395048748
+      },
+      {
+        "step": 157,
+        "energy_before": -0.9649616678527896,
+        "energy_after": -0.9649650555718754,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.488762410118263e-13,
+        "tangent_velocity": 0.0012947099979584802
+      },
+      {
+        "step": 158,
+        "energy_before": -0.9649650555718754,
+        "energy_after": -0.9649683343357859,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.549099351154655e-12,
+        "tangent_velocity": 0.001273558671599706
+      },
+      {
+        "step": 159,
+        "energy_before": -0.964968334335786,
+        "energy_after": -0.9649715077522845,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.3109654131568835e-12,
+        "tangent_velocity": 0.0012527745367525355
+      },
+      {
+        "step": 160,
+        "energy_before": -0.9649715077522845,
+        "energy_after": -0.9649745793082803,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.4559547594822985e-12,
+        "tangent_velocity": 0.0012323514324146104
+      },
+      {
+        "step": 161,
+        "energy_before": -0.9649745793082803,
+        "energy_after": -0.9649775523738295,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.497162820196564e-12,
+        "tangent_velocity": 0.0012122832629684569
+      },
+      {
+        "step": 162,
+        "energy_before": -0.9649775523738295,
+        "energy_after": -0.9649804302060154,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.200996512531582e-12,
+        "tangent_velocity": 0.0011925640004479586
+      },
+      {
+        "step": 163,
+        "energy_before": -0.9649804302060153,
+        "energy_after": -0.9649832159527151,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.02026188009594e-12,
+        "tangent_velocity": 0.0011731876866740466
+      },
+      {
+        "step": 164,
+        "energy_before": -0.9649832159527153,
+        "energy_after": -0.9649859126562471,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.1003710011199054e-12,
+        "tangent_velocity": 0.0011541484349071479
+      },
+      {
+        "step": 165,
+        "energy_before": -0.9649859126562471,
+        "energy_after": -0.9649885232569053,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7389317773768572e-11,
+        "tangent_velocity": 0.0011354404314871027
+      },
+      {
+        "step": 166,
+        "energy_before": -0.9649885232569053,
+        "energy_after": -0.9649910505963785,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.935207799763208e-12,
+        "tangent_velocity": 0.0011170579371746212
+      },
+      {
+        "step": 167,
+        "energy_before": -0.9649910505963782,
+        "energy_after": -0.9649934974210569,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.652403558685391e-12,
+        "tangent_velocity": 0.001098995288081679
+      },
+      {
+        "step": 168,
+        "energy_before": -0.964993497421057,
+        "energy_after": -0.9649958663852338,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.434393153109324e-12,
+        "tangent_velocity": 0.0010812468967974337
+      },
+      {
+        "step": 169,
+        "energy_before": -0.9649958663852338,
+        "energy_after": -0.9649981600541944,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.442109920610895e-12,
+        "tangent_velocity": 0.0010638072530076547
+      },
+      {
+        "step": 170,
+        "energy_before": -0.9649981600541945,
+        "energy_after": -0.9650003809072053,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.390075666655026e-12,
+        "tangent_velocity": 0.0010466709241328401
+      },
+      {
+        "step": 171,
+        "energy_before": -0.9650003809072053,
+        "energy_after": -0.9650025313404024,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.88183335138799e-12,
+        "tangent_velocity": 0.0010298325557419209
+      },
+      {
+        "step": 172,
+        "energy_before": -0.9650025313404024,
+        "energy_after": -0.965004613669579,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0508915422742678e-12,
+        "tangent_velocity": 0.0010132868719195242
+      },
+      {
+        "step": 173,
+        "energy_before": -0.965004613669579,
+        "energy_after": -0.9650066301328843,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.6845606840568605e-12,
+        "tangent_velocity": 0.0009970286754055523
+      },
+      {
+        "step": 174,
+        "energy_before": -0.9650066301328847,
+        "energy_after": -0.9650085828934256,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.231038751240676e-12,
+        "tangent_velocity": 0.0009810528477405887
+      },
+      {
+        "step": 175,
+        "energy_before": -0.9650085828934256,
+        "energy_after": -0.9650104740417867,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.53264056415915e-12,
+        "tangent_velocity": 0.0009653543492663573
+      },
+      {
+        "step": 176,
+        "energy_before": -0.9650104740417867,
+        "energy_after": -0.9650123055984604,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.026482379973828e-12,
+        "tangent_velocity": 0.0009499282189647614
+      },
+      {
+        "step": 177,
+        "energy_before": -0.9650123055984604,
+        "energy_after": -0.9650140795162004,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.724070273211359e-13,
+        "tangent_velocity": 0.0009347695743686989
+      },
+      {
+        "step": 178,
+        "energy_before": -0.9650140795162004,
+        "energy_after": -0.9650157976822937,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.2929623473069995e-12,
+        "tangent_velocity": 0.0009198736112721292
+      },
+      {
+        "step": 179,
+        "energy_before": -0.9650157976822937,
+        "energy_after": -0.9650174619207591,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0485982624991327e-11,
+        "tangent_velocity": 0.0009052356034110995
+      },
+      {
+        "step": 180,
+        "energy_before": -0.965017461920759,
+        "energy_after": -0.9650190739944714,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.0715734719696565e-12,
+        "tangent_velocity": 0.0008908509021155096
+      },
+      {
+        "step": 181,
+        "energy_before": -0.9650190739944714,
+        "energy_after": -0.965020635607219,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.015108286491053e-12,
+        "tangent_velocity": 0.0008767149358102559
+      },
+      {
+        "step": 182,
+        "energy_before": -0.965020635607219,
+        "energy_after": -0.965022148405689,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.601766647318892e-12,
+        "tangent_velocity": 0.0008628232095644229
+      },
+      {
+        "step": 183,
+        "energy_before": -0.965022148405689,
+        "energy_after": -0.9650236139813924,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.672492042011044e-12,
+        "tangent_velocity": 0.0008491713045458173
+      },
+      {
+        "step": 184,
+        "energy_before": -0.9650236139813924,
+        "energy_after": -0.9650250338725223,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1004347063618304e-12,
+        "tangent_velocity": 0.0008357548773807634
+      },
+      {
+        "step": 185,
+        "energy_before": -0.9650250338725223,
+        "energy_after": -0.9650264095657549,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.845226033357844e-12,
+        "tangent_velocity": 0.0008225696595760529
+      },
+      {
+        "step": 186,
+        "energy_before": -0.9650264095657546,
+        "energy_after": -0.9650277424979876,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.5843295730179574e-12,
+        "tangent_velocity": 0.0008096114567598614
+      },
+      {
+        "step": 187,
+        "energy_before": -0.9650277424979876,
+        "energy_after": -0.9650290340580255,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.659980993608868e-12,
+        "tangent_velocity": 0.0007968761480349657
+      },
+      {
+        "step": 188,
+        "energy_before": -0.9650290340580255,
+        "energy_after": -0.965030285588207,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.2694365625653314e-12,
+        "tangent_velocity": 0.0007843596851450116
+      },
+      {
+        "step": 189,
+        "energy_before": -0.965030285588207,
+        "energy_after": -0.965031498385981,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.4187960928246215e-12,
+        "tangent_velocity": 0.0007720580917427977
+      },
+      {
+        "step": 190,
+        "energy_before": -0.965031498385981,
+        "energy_after": -0.9650326737054278,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.935936570839465e-12,
+        "tangent_velocity": 0.0007599674625149932
+      },
+      {
+        "step": 191,
+        "energy_before": -0.9650326737054278,
+        "energy_after": -0.9650338127587345,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.172731809405382e-12,
+        "tangent_velocity": 0.000748083962351216
+      },
+      {
+        "step": 192,
+        "energy_before": -0.9650338127587345,
+        "energy_after": -0.9650349167176168,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.2261536265497817e-12,
+        "tangent_velocity": 0.0007364038254710434
+      },
+      {
+        "step": 193,
+        "energy_before": -0.9650349167176168,
+        "energy_after": -0.9650359867146964,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.7243298988961488e-12,
+        "tangent_velocity": 0.0007249233544944657
+      },
+      {
+        "step": 194,
+        "energy_before": -0.9650359867146964,
+        "energy_after": -0.9650370238448329,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.2569850204386704e-12,
+        "tangent_velocity": 0.0007136389195345761
+      },
+      {
+        "step": 195,
+        "energy_before": -0.9650370238448329,
+        "energy_after": -0.9650380291664078,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.674848538871266e-12,
+        "tangent_velocity": 0.0007025469572365838
+      },
+      {
+        "step": 196,
+        "energy_before": -0.9650380291664078,
+        "energy_after": -0.9650390037025685,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.42732291478487e-13,
+        "tangent_velocity": 0.0006916439698363117
+      },
+      {
+        "step": 197,
+        "energy_before": -0.9650390037025686,
+        "energy_after": -0.9650399484424286,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.2061730332088568e-12,
+        "tangent_velocity": 0.0006809265241746733
+      },
+      {
+        "step": 198,
+        "energy_before": -0.9650399484424286,
+        "energy_after": -0.965040864342228,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.576512100614015e-12,
+        "tangent_velocity": 0.0006703912507065192
+      },
+      {
+        "step": 199,
+        "energy_before": -0.965040864342228,
+        "energy_after": -0.9650417523264521,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.2667014062082086e-12,
+        "tangent_velocity": 0.0006600348425193014
+      },
+      {
+        "step": 200,
+        "energy_before": -0.9650417523264521,
+        "energy_after": -0.9650426132889162,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.773044034889671e-12,
+        "tangent_velocity": 0.0006498540543162302
+      },
+      {
+        "step": 201,
+        "energy_before": -0.9650426132889164,
+        "energy_after": -0.965043448093808,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.3753500356547196e-12,
+        "tangent_velocity": 0.0006398457014105058
+      },
+      {
+        "step": 202,
+        "energy_before": -0.965043448093808,
+        "energy_after": -0.965044257576698,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.861624012978774e-13,
+        "tangent_velocity": 0.0006300066587297514
+      },
+      {
+        "step": 203,
+        "energy_before": -0.965044257576698,
+        "energy_after": -0.9650450425455118,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.048601069053458e-12,
+        "tangent_velocity": 0.0006203338597857329
+      },
+      {
+        "step": 204,
+        "energy_before": -0.9650450425455118,
+        "energy_after": -0.9650458037814728,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.880956704030976e-12,
+        "tangent_velocity": 0.0006108242956813868
+      },
+      {
+        "step": 205,
+        "energy_before": -0.9650458037814728,
+        "energy_after": -0.9650465420400081,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.142568963589298e-12,
+        "tangent_velocity": 0.0006014750140871766
+      },
+      {
+        "step": 206,
+        "energy_before": -0.9650465420400081,
+        "energy_after": -0.9650472580516252,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.650904354322205e-12,
+        "tangent_velocity": 0.0005922831182358228
+      },
+      {
+        "step": 207,
+        "energy_before": -0.9650472580516252,
+        "energy_after": -0.9650479525227582,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.6763704820128196e-12,
+        "tangent_velocity": 0.0005832457659490743
+      },
+      {
+        "step": 208,
+        "energy_before": -0.9650479525227582,
+        "energy_after": -0.9650486261365833,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.3911537368973433e-12,
+        "tangent_velocity": 0.0005743601686248455
+      },
+      {
+        "step": 209,
+        "energy_before": -0.9650486261365834,
+        "energy_after": -0.9650492795538069,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.0620678736344844e-12,
+        "tangent_velocity": 0.0005656235902446735
+      },
+      {
+        "step": 210,
+        "energy_before": -0.9650492795538069,
+        "energy_after": -0.9650499134134266,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.278347540958601e-12,
+        "tangent_velocity": 0.000557033346424592
+      },
+      {
+        "step": 211,
+        "energy_before": -0.9650499134134266,
+        "energy_after": -0.9650505283334635,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1542649270009432e-12,
+        "tangent_velocity": 0.0005485868034464197
+      },
+      {
+        "step": 212,
+        "energy_before": -0.9650505283334635,
+        "energy_after": -0.9650511249116729,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.07174251231379e-12,
+        "tangent_velocity": 0.000540281377275002
+      },
+      {
+        "step": 213,
+        "energy_before": -0.9650511249116729,
+        "energy_after": -0.9650517037262255,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.3599275618719593e-12,
+        "tangent_velocity": 0.0005321145326649683
+      },
+      {
+        "step": 214,
+        "energy_before": -0.9650517037262255,
+        "energy_after": -0.9650522653363688,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.023552915017677e-12,
+        "tangent_velocity": 0.0005240837821924898
+      },
+      {
+        "step": 215,
+        "energy_before": -0.9650522653363688,
+        "energy_after": -0.9650528102830639,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.671205461726541e-12,
+        "tangent_velocity": 0.0005161866853583603
+      },
+      {
+        "step": 216,
+        "energy_before": -0.9650528102830638,
+        "energy_after": -0.9650533390895997,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.11339148458717e-12,
+        "tangent_velocity": 0.000508420847699561
+      },
+      {
+        "step": 217,
+        "energy_before": -0.9650533390895996,
+        "energy_after": -0.9650538522621864,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.8656660787647627e-12,
+        "tangent_velocity": 0.0005007839198621537
+      },
+      {
+        "step": 218,
+        "energy_before": -0.9650538522621864,
+        "energy_after": -0.9650543502905294,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7516145284235338e-12,
+        "tangent_velocity": 0.0004932735967778408
+      },
+      {
+        "step": 219,
+        "energy_before": -0.9650543502905294,
+        "energy_after": -0.9650548336483823,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.2548699926685343e-12,
+        "tangent_velocity": 0.0004858876167721332
+      },
+      {
+        "step": 220,
+        "energy_before": -0.9650548336483823,
+        "energy_after": -0.9650553027940795,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.6508751009848525e-12,
+        "tangent_velocity": 0.00047862376073153784
+      },
+      {
+        "step": 221,
+        "energy_before": -0.9650553027940795,
+        "energy_after": -0.9650557581710534,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.030523116383722e-12,
+        "tangent_velocity": 0.00047147985127890714
+      },
+      {
+        "step": 222,
+        "energy_before": -0.9650557581710534,
+        "energy_after": -0.9650562002083322,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.1793519758841865e-12,
+        "tangent_velocity": 0.0004644537519662157
+      },
+      {
+        "step": 223,
+        "energy_before": -0.9650562002083322,
+        "energy_after": -0.9650566293210203,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.3812248094496435e-12,
+        "tangent_velocity": 0.0004575433664643192
+      },
+      {
+        "step": 224,
+        "energy_before": -0.9650566293210204,
+        "energy_after": -0.965057045910763,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.898990958288062e-12,
+        "tangent_velocity": 0.00045074663779209976
+      },
+      {
+        "step": 225,
+        "energy_before": -0.965057045910763,
+        "energy_after": -0.9650574503661947,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.8928393511632967e-12,
+        "tangent_velocity": 0.0004440615475449589
+      },
+      {
+        "step": 226,
+        "energy_before": -0.9650574503661947,
+        "energy_after": -0.9650578430633726,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.780559810840684e-12,
+        "tangent_velocity": 0.0004374861151484892
+      },
+      {
+        "step": 227,
+        "energy_before": -0.9650578430633726,
+        "energy_after": -0.9650582243661946,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.398126776381332e-13,
+        "tangent_velocity": 0.0004310183971105636
+      },
+      {
+        "step": 228,
+        "energy_before": -0.9650582243661946,
+        "energy_after": -0.9650585946268045,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.2784617626470847e-12,
+        "tangent_velocity": 0.0004246564863183927
+      },
+      {
+        "step": 229,
+        "energy_before": -0.9650585946268045,
+        "energy_after": -0.9650589541859805,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.698140844304596e-12,
+        "tangent_velocity": 0.00041839851131546214
+      },
+      {
+        "step": 230,
+        "energy_before": -0.9650589541859808,
+        "energy_after": -0.9650593033735154,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.691409757910552e-12,
+        "tangent_velocity": 0.00041224263561345906
+      },
+      {
+        "step": 231,
+        "energy_before": -0.9650593033735154,
+        "energy_after": -0.9650596425085786,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.1833602450649062e-12,
+        "tangent_velocity": 0.0004061870570245401
+      },
+      {
+        "step": 232,
+        "energy_before": -0.9650596425085786,
+        "energy_after": -0.9650599719000689,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.558579097964716e-12,
+        "tangent_velocity": 0.0004002300069706217
+      },
+      {
+        "step": 233,
+        "energy_before": -0.9650599719000689,
+        "energy_after": -0.9650602918469557,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.236785340871374e-12,
+        "tangent_velocity": 0.0003943697498619755
+      },
+      {
+        "step": 234,
+        "energy_before": -0.9650602918469557,
+        "energy_after": -0.9650606026386074,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.413724287253557e-12,
+        "tangent_velocity": 0.00038860458244520136
+      },
+      {
+        "step": 235,
+        "energy_before": -0.9650606026386073,
+        "energy_after": -0.9650609045551074,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.411107037557369e-12,
+        "tangent_velocity": 0.00038293283317501514
+      },
+      {
+        "step": 236,
+        "energy_before": -0.9650609045551074,
+        "energy_after": -0.9650611978675642,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0696028303021268e-11,
+        "tangent_velocity": 0.0003773528616146256
+      },
+      {
+        "step": 237,
+        "energy_before": -0.9650611978675642,
+        "energy_after": -0.9650614828384061,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.72836112032896e-12,
+        "tangent_velocity": 0.00037186305781783456
+      },
+      {
+        "step": 238,
+        "energy_before": -0.965061482838406,
+        "energy_after": -0.9650617597216683,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.196407262504596e-12,
+        "tangent_velocity": 0.0003664618417722962
+      },
+      {
+        "step": 239,
+        "energy_before": -0.9650617597216683,
+        "energy_after": -0.9650620287632702,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.7996114526173724e-12,
+        "tangent_velocity": 0.0003611476627918279
+      },
+      {
+        "step": 240,
+        "energy_before": -0.9650620287632702,
+        "energy_after": -0.9650622902012835,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.433610055561263e-12,
+        "tangent_velocity": 0.00035591899898032846
+      },
+      {
+        "step": 241,
+        "energy_before": -0.9650622902012835,
+        "energy_after": -0.9650625442661901,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 5.82775413082544e-12,
+        "tangent_velocity": 0.00035077435665443633
+      },
+      {
+        "step": 242,
+        "energy_before": -0.9650625442661901,
+        "energy_after": -0.9650627911811337,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.281192870910175e-12,
+        "tangent_velocity": 0.0003457122698373879
+      },
+      {
+        "step": 243,
+        "energy_before": -0.9650627911811337,
+        "energy_after": -0.9650630311621606,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.970084518633749e-12,
+        "tangent_velocity": 0.0003407312996867507
+      },
+      {
+        "step": 244,
+        "energy_before": -0.9650630311621606,
+        "energy_after": -0.9650632644184539,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.143330580399765e-12,
+        "tangent_velocity": 0.0003358300340143183
+      },
+      {
+        "step": 245,
+        "energy_before": -0.965063264418454,
+        "energy_after": -0.965063491152559,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.1072270273236182e-12,
+        "tangent_velocity": 0.00033100708676027585
+      },
+      {
+        "step": 246,
+        "energy_before": -0.965063491152559,
+        "energy_after": -0.9650637115606021,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.00574648011002e-11,
+        "tangent_velocity": 0.00032626109748494053
+      },
+      {
+        "step": 247,
+        "energy_before": -0.9650637115606021,
+        "energy_after": -0.9650639258325012,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.434665383508139e-12,
+        "tangent_velocity": 0.00032159073090954823
+      },
+      {
+        "step": 248,
+        "energy_before": -0.9650639258325012,
+        "energy_after": -0.965064134152171,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.53353658419773e-12,
+        "tangent_velocity": 0.000316994676404297
+      },
+      {
+        "step": 249,
+        "energy_before": -0.9650641341521711,
+        "energy_after": -0.9650643366977182,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.910233830376178e-12,
+        "tangent_velocity": 0.00031247164753907334
+      },
+      {
+        "step": 250,
+        "energy_before": -0.9650643366977182,
+        "energy_after": -0.9650645336416327,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.053266248056839e-12,
+        "tangent_velocity": 0.00030802038163291634
+      },
+      {
+        "step": 251,
+        "energy_before": -0.9650645336416327,
+        "energy_after": -0.9650647251509737,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.383576900463395e-12,
+        "tangent_velocity": 0.00030363963926704086
+      },
+      {
+        "step": 252,
+        "energy_before": -0.9650647251509735,
+        "energy_after": -0.9650649113875449,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.091562910073293e-12,
+        "tangent_velocity": 0.00029932820388584876
+      },
+      {
+        "step": 253,
+        "energy_before": -0.9650649113875449,
+        "energy_after": -0.9650650925080678,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.868651197511452e-12,
+        "tangent_velocity": 0.0002950848813342341
+      },
+      {
+        "step": 254,
+        "energy_before": -0.9650650925080678,
+        "energy_after": -0.9650652686643486,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.3196435991641647e-12,
+        "tangent_velocity": 0.0002909084994344821
+      },
+      {
+        "step": 255,
+        "energy_before": -0.9650652686643486,
+        "energy_after": -0.9650654400034379,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.92697415844978e-12,
+        "tangent_velocity": 0.00028679790759250054
+      },
+      {
+        "step": 256,
+        "energy_before": -0.9650654400034379,
+        "energy_after": -0.9650656066677864,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.240226752807802e-12,
+        "tangent_velocity": 0.0002827519763620112
+      },
+      {
+        "step": 257,
+        "energy_before": -0.9650656066677864,
+        "energy_after": -0.9650657687953953,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.993056877764192e-12,
+        "tangent_velocity": 0.00027876959705392567
+      },
+      {
+        "step": 258,
+        "energy_before": -0.9650657687953953,
+        "energy_after": -0.9650659265199613,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.155775975733607e-12,
+        "tangent_velocity": 0.0002748496813475518
+      },
+      {
+        "step": 259,
+        "energy_before": -0.9650659265199613,
+        "energy_after": -0.9650660799710159,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.610031015087221e-12,
+        "tangent_velocity": 0.00027099116089922655
+      },
+      {
+        "step": 260,
+        "energy_before": -0.9650660799710159,
+        "energy_after": -0.9650662292740634,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.090688938778584e-12,
+        "tangent_velocity": 0.00026719298696560833
+      },
+      {
+        "step": 261,
+        "energy_before": -0.9650662292740634,
+        "energy_after": -0.9650663745507089,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.751080713770378e-12,
+        "tangent_velocity": 0.0002634541300335509
+      },
+      {
+        "step": 262,
+        "energy_before": -0.9650663745507089,
+        "energy_after": -0.9650665159187874,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0138395608451204e-11,
+        "tangent_velocity": 0.0002597735794521536
+      },
+      {
+        "step": 263,
+        "energy_before": -0.9650665159187874,
+        "energy_after": -0.9650666534924848,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.3290859969336603e-12,
+        "tangent_velocity": 0.0002561503430822481
+      },
+      {
+        "step": 264,
+        "energy_before": -0.9650666534924849,
+        "energy_after": -0.9650667873824564,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 7.034754006514446e-12,
+        "tangent_velocity": 0.0002525834469347945
+      },
+      {
+        "step": 265,
+        "energy_before": -0.9650667873824564,
+        "energy_after": -0.965066917695942,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.94346217520391e-12,
+        "tangent_velocity": 0.00024907193483416176
+      },
+      {
+        "step": 266,
+        "energy_before": -0.965066917695942,
+        "energy_after": -0.965067044536875,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.0736829724809036e-12,
+        "tangent_velocity": 0.0002456148680933448
+      },
+      {
+        "step": 267,
+        "energy_before": -0.9650670445368749,
+        "energy_after": -0.9650671680059908,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.507453956438716e-12,
+        "tangent_velocity": 0.00024221132515080528
+      },
+      {
+        "step": 268,
+        "energy_before": -0.9650671680059908,
+        "energy_after": -0.9650672882009291,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.212228089198105e-12,
+        "tangent_velocity": 0.00023886040127496375
+      },
+      {
+        "step": 269,
+        "energy_before": -0.9650672882009291,
+        "energy_after": -0.9650674052163334,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.064274794464289e-12,
+        "tangent_velocity": 0.00023556120823992424
+      },
+      {
+        "step": 270,
+        "energy_before": -0.9650674052163334,
+        "energy_after": -0.9650675191439487,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.884140361809486e-12,
+        "tangent_velocity": 0.00023231287399325622
+      },
+      {
+        "step": 271,
+        "energy_before": -0.965067519143949,
+        "energy_after": -0.9650676300727131,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.766410443145262e-12,
+        "tangent_velocity": 0.00022911454237199114
+      },
+      {
+        "step": 272,
+        "energy_before": -0.9650676300727131,
+        "energy_after": -0.9650677380888495,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.5399609591803935e-12,
+        "tangent_velocity": 0.00022596537279570005
+      },
+      {
+        "step": 273,
+        "energy_before": -0.9650677380888495,
+        "energy_after": -0.9650678432759507,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.025949742683957e-12,
+        "tangent_velocity": 0.00022286453995974757
+      },
+      {
+        "step": 274,
+        "energy_before": -0.9650678432759507,
+        "energy_after": -0.9650679457150662,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.445238553481524e-12,
+        "tangent_velocity": 0.00021981123355952183
+      },
+      {
+        "step": 275,
+        "energy_before": -0.9650679457150662,
+        "energy_after": -0.9650680454847812,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.0053902633271442e-12,
+        "tangent_velocity": 0.00021680465799298705
+      },
+      {
+        "step": 276,
+        "energy_before": -0.9650680454847812,
+        "energy_after": -0.9650681426612966,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.150195502937429e-11,
+        "tangent_velocity": 0.00021384403209711984
+      },
+      {
+        "step": 277,
+        "energy_before": -0.9650681426612966,
+        "energy_after": -0.9650682373185041,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0889355448366667e-11,
+        "tangent_velocity": 0.00021092858884946762
+      },
+      {
+        "step": 278,
+        "energy_before": -0.9650682373185041,
+        "energy_after": -0.965068329528061,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.0446958674498254e-12,
+        "tangent_velocity": 0.00020805757513497953
+      },
+      {
+        "step": 279,
+        "energy_before": -0.965068329528061,
+        "energy_after": -0.9650684193594604,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.6534523780138325e-12,
+        "tangent_velocity": 0.00020523025144069548
+      },
+      {
+        "step": 280,
+        "energy_before": -0.9650684193594604,
+        "energy_after": -0.9650685068800994,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.478747213258991e-12,
+        "tangent_velocity": 0.00020244589162919768
+      },
+      {
+        "step": 281,
+        "energy_before": -0.9650685068800993,
+        "energy_after": -0.9650685921553467,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.78917864625689e-12,
+        "tangent_velocity": 0.0001997037826630061
+      },
+      {
+        "step": 282,
+        "energy_before": -0.9650685921553467,
+        "energy_after": -0.9650686752486056,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.7479330295392042e-12,
+        "tangent_velocity": 0.0001970032243760394
+      },
+      {
+        "step": 283,
+        "energy_before": -0.9650686752486056,
+        "energy_after": -0.9650687562213776,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.0029703367577987e-12,
+        "tangent_velocity": 0.00019434352920567286
+      },
+      {
+        "step": 284,
+        "energy_before": -0.9650687562213776,
+        "energy_after": -0.9650688351333206,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.0611018828595706e-11,
+        "tangent_velocity": 0.00019172402196489385
+      },
+      {
+        "step": 285,
+        "energy_before": -0.9650688351333206,
+        "energy_after": -0.9650689120423085,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.200293523792383e-11,
+        "tangent_velocity": 0.00018914403961612852
+      },
+      {
+        "step": 286,
+        "energy_before": -0.9650689120423087,
+        "energy_after": -0.9650689870044867,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.6736307825790046e-12,
+        "tangent_velocity": 0.00018660293101036357
+      },
+      {
+        "step": 287,
+        "energy_before": -0.9650689870044866,
+        "energy_after": -0.9650690600743258,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.887759260882224e-12,
+        "tangent_velocity": 0.00018410005669469744
+      },
+      {
+        "step": 288,
+        "energy_before": -0.9650690600743258,
+        "energy_after": -0.9650691313046754,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.2379313632395557e-12,
+        "tangent_velocity": 0.0001816347886667045
+      },
+      {
+        "step": 289,
+        "energy_before": -0.9650691313046756,
+        "energy_after": -0.9650692007468136,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.2455119890344735e-11,
+        "tangent_velocity": 0.00017920651016256866
+      },
+      {
+        "step": 290,
+        "energy_before": -0.9650692007468136,
+        "energy_after": -0.9650692684504966,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 3.302182544113741e-12,
+        "tangent_velocity": 0.00017681461544611792
+      },
+      {
+        "step": 291,
+        "energy_before": -0.9650692684504963,
+        "energy_after": -0.965069334464006,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 1.4212261879031302e-11,
+        "tangent_velocity": 0.00017445850959359673
+      },
+      {
+        "step": 292,
+        "energy_before": -0.965069334464006,
+        "energy_after": -0.9650693988341961,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.1798720287405984e-12,
+        "tangent_velocity": 0.00017213760828125278
+      },
+      {
+        "step": 293,
+        "energy_before": -0.9650693988341961,
+        "energy_after": -0.9650694616065355,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 2.2903514432284344e-12,
+        "tangent_velocity": 0.00016985133760356606
+      },
+      {
+        "step": 294,
+        "energy_before": -0.9650694616065355,
+        "energy_after": -0.965069522825153,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 6.447145185285866e-12,
+        "tangent_velocity": 0.00016759913385345132
+      },
+      {
+        "step": 295,
+        "energy_before": -0.965069522825153,
+        "energy_after": -0.9650695825328769,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.451620060674528e-12,
+        "tangent_velocity": 0.00016538044333262652
+      },
+      {
+        "step": 296,
+        "energy_before": -0.9650695825328768,
+        "energy_after": -0.9650696407712768,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.5615714625647684e-12,
+        "tangent_velocity": 0.00016319472217322066
+      },
+      {
+        "step": 297,
+        "energy_before": -0.9650696407712768,
+        "energy_after": -0.9650696975807018,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 8.987439451085918e-12,
+        "tangent_velocity": 0.00016104143612973427
+      },
+      {
+        "step": 298,
+        "energy_before": -0.9650696975807018,
+        "energy_after": -0.9650697530003178,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.16001382709673e-12,
+        "tangent_velocity": 0.0001589200604122604
+      },
+      {
+        "step": 299,
+        "energy_before": -0.9650697530003178,
+        "energy_after": -0.9650698070681449,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 4.576532991687688e-12,
+        "tangent_velocity": 0.00015683007949278708
+      },
+      {
+        "step": 300,
+        "energy_before": -0.9650698070681449,
+        "energy_after": -0.9650698598210923,
+        "accepted_rate": 1.0,
+        "trials": 1,
+        "linear_residual": 9.915298049255143e-12,
+        "tangent_velocity": 0.00015477098694324974
+      }
+    ],
+    "outer_steps": 300,
+    "accepted_steps": 300,
+    "training_h_actions": 1800,
+    "training_model_calls": 1800,
+    "jacobian_rows": 57600,
+    "max_solve_dimension": 192,
+    "shift": 0.0001,
+    "model_index": 0,
+    "train_lambda": [
+      -0.0625,
+      0.0,
+      0.0625
+    ]
+  }
+]

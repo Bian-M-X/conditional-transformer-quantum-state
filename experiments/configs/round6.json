@@ -1,0 +1,14 @@
+{
+  "schema_version": 1, "issue": 11, "n": 6,
+  "h_values": [0.4, 0.6], "architectures": ["mlp", "transformer"],
+  "seeds": [17, 29, 43, 61, 73],
+  "arms": ["shared_sr", "independent_sr", "wide_lbfgs"],
+  "train": [-0.0625, 0.0, 0.0625],
+  "test": [-0.057, -0.035, -0.01, -0.0025, -0.0005, 0.0005, 0.0025, 0.01, 0.035, 0.057],
+  "sr_steps": 300, "sr_shift": 0.0001, "sr_rate": 1.0, "sr_radius": 0.1, "sr_max_trials": 6,
+  "wide_mlp": 60, "wide_transformer": 28, "lbfgs_closures": 1200,
+  "reliable_worst_infidelity": 0.01, "required_seeds": 4,
+  "timeout_seconds_per_run": 600, "timeout_seconds_per_invocation": 3600,
+  "primary": "final worst training-anchor infidelity; no model selection",
+  "data_status": "reused N=6 development grid; no fresh generalization claim"
+}
