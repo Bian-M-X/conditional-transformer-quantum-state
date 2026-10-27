@@ -1,0 +1,9 @@
+# ADR0010: safe counterfactual headroom before a learned scheduler
+
+2026-10-27. Issue19 starts from Issue17 branch d31b533 (draft PR18), with current main44e03c6 already included. User explicitly says begin, and permits Astra for sufficiently difficult/innovative questions. Actual gpt-6-astra/high advisory review took place after the root proposed its design; it required retained-old snapshots, symmetry closure, R/A-vs-left/right decomposition, robust gate and safe step-state semantics. No external human review is fabricated.
+
+Choose an exact N8 R/A pilot first; M has no benefit in an exact-projection setting and remains untested. Matrix-free H, cached affine Ritz, complete optimizer/RNG snapshots and tests are added as new modules, preserving byte-frozen round7 sources. All numerical code/config/protocol committed before training. Chunk-budget rollback restores model, optimizer and RNG while charging consumed work; only same segmentation replay is asserted, not equivalence to unsegmented L-BFGS.
+
+Use two fixed-h families crossed with narrow/wide lambda radius,5 seeds,2 architectures and3 correlated maturities. R appends while retaining old snapshots; A uses energy-chosen warm start and appends. Main analysis closes every basis under the known spin flip and includes STOP. This reduces headroom manufactured by discarded vectors, extra basis capacity or omitted symmetry.
+
+The experiment can reject a narrow allocation proposal; passing only motivates testing whether allowed observations predict action value. It cannot establish net deployable cost benefit, three-action learning, broader novelty or ICLR readiness. Preserve every seed, task and adverse result. Publish via incremental branch/PR on Issue17; do not force-push main or promote confirmed conclusions without independent review.

@@ -1,0 +1,19 @@
+{
+  "status": "advisory_design_review_before_numerical_freeze",
+  "date": "2026-10-27",
+  "user_authorization": "May consult Astra for sufficiently complex or innovative questions; root proposed experiment before consultation",
+  "actual_subagent_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "independent_human_review": false,
+  "source_code_independently_reviewed_by_astra": false,
+  "accepted_design_changes": [
+    "Retain old snapshots and append refined state, avoiding asymmetric basis memory against acquisition",
+    "Known global spin-flip closure and STOP as strong zero-training controls",
+    "Separate left/right target selection from refine/acquire type switching",
+    "Hold h fixed within family while crossing two predetermined parameter radii",
+    "Report best-simple-policy ceiling, absolute improvement, all seed values and leave-one-out sensitivity",
+    "Require eligible support covering both families, plus meaningful wins by both action types"
+  ],
+  "budget_clarification": "Astra accepted exact closure caps after root explained model+optimizer+RNG rollback with consumed work retained. Same segmented schedule replay only; no equivalence to uninterrupted L-BFGS or net-cost benefit claimed.",
+  "interpretation": "Pass justifies testing action-value predictability; failure stops this finite task/menu/budget pilot. Neither establishes a new scheduler, sampling action benefit or ICLR readiness."
+}
