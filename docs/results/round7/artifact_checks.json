@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-27",
+  "report_pages": 9,
+  "report_figures": 6,
+  "equation_images": 4,
+  "report_sha256": "73a3993ecc5851a9eda9e99c2e8f315c2d8e5780d6b79dafb04928104c9316b1",
+  "pdf_a4": true,
+  "visual_review": "Agent inspected all nine rendered pages; corrected figure-1 caption parser and rechecked final page 2. No independent human layout review.",
+  "render": "Poppler pdftoppm; final render 1500px longest side",
+  "figures": [
+    {
+      "name": "model_correspondence",
+      "width_mm": 170,
+      "height_mm": 70,
+      "png_pixels": [
+        4015,
+        1653
+      ],
+      "png_dpi": 600,
+      "pdf_sha256": "991d39b7d3e704b49081771762ca1aa852f8036108c07d7de11734f7809d1be1",
+      "visual_review": "agent inspected; no clipping/overlap; original-size insertion"
+    },
+    {
+      "name": "parameter_split",
+      "width_mm": 170,
+      "height_mm": 65,
+      "png_pixels": [
+        4015,
+        1535
+      ],
+      "png_dpi": 600,
+      "pdf_sha256": "ccc5294688b69954f078e1c0889da50bc6c1b0f6c9053c0aeb9a0bbc58060565",
+      "visual_review": "agent inspected; no clipping/overlap; original-size insertion"
+    },
+    {
+      "name": "anchor_reliability",
+      "width_mm": 170,
+      "height_mm": 90,
+      "png_pixels": [
+        4015,
+        2125
+      ],
+      "png_dpi": 600,
+      "pdf_sha256": "a384ef5b3e3f7ce410fcd03e0fa0b19909d91cd478a1933b99a9d6ffacecf88f",
+      "visual_review": "agent inspected; no clipping/overlap; original-size insertion"
+    },
+    {
+      "name": "transformer_generalization",
+      "width_mm": 174,
+      "height_mm": 140,
+      "png_pixels": [
+        4110,
+        3307
+      ],
+      "png_dpi": 600,
+      "pdf_sha256": "f26f9e1fd7af2502d71497d72d90654ca69589effd7ec49eac69666177f6323d",
+      "visual_review": "agent inspected; no clipping/overlap; original-size insertion"
+    },
+    {
+      "name": "paired_comparisons",
+      "width_mm": 170,
+      "height_mm": 90,
+      "png_pixels": [
+        4015,
+        2125
+      ],
+      "png_dpi": 600,
+      "pdf_sha256": "96ef090b61670895321591c7eb683251fd4c4b2a8e80e103922763a4263e7f3e",
+      "visual_review": "agent inspected; no clipping/overlap; original-size insertion"
+    },
+    {
+      "name": "strong_baselines",
+      "width_mm": 130,
+      "height_mm": 78,
+      "png_pixels": [
+        3070,
+        1842
+      ],
+      "png_dpi": 600,
+      "pdf_sha256": "3686659811d50293dc6e85c79b33f7e7b349fc5dc29eadfd2e10853423def7e5",
+      "visual_review": "agent inspected; no clipping/overlap; original-size insertion"
+    }
+  ],
+  "final_checks": "33 tests passed; all 510 manifests valid; round7 audit and both stored replay comparisons passed",
+  "artifact_authoring_marker": "Executed once for six figure PDFs and one report PDF before first authoring; not repeated"
+}

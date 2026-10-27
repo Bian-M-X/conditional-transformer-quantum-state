@@ -55,3 +55,13 @@
 - 建立共同的 Agent 工作协议、交接模板、研究状态入口、实验 manifest 规则和轻量 CI。
 - **本提交未运行新的科学实验，也没有核验 ZIP 内的结论。**
 - 下一步：归档并独立复现历史预实验；见 `docs/STATE.md` 与 GitHub Issues。
+
+
+## 2026-10-27 — 第七轮本地课程泛化研究
+
+- 用户将远程发布改为D盘本地交付；登记local-round7-course-generalization，独立成员复核未完成。
+- 事前冻结固定N=6、lambda=0、两覆盖、五种子；完成60组主运行、9000条指标，无失败与种子替换。
+- 主配置raw/L-BFGS训练门槛未通过（窄3/5，宽0/5）；共同外推wide-minus-narrow为+0.127278±0.0889，改善判据失败。
+- even控制两侧训练均5/5达标，共同插值五种子均因扩大覆盖变差；保留共同外推seed401反例及同源查表/Ritz对照。
+- 原基准1311值与新配置10136值复跑逐值相同；全振幅指标复算通过。报告、文献、过程、依赖与入口见docs/round7_reproduction.md和docs/handoffs/local-round7.md。
+- 正式STATE未提升为confirmed；成员独立理解、复核、署名和PPT为团队后续整合事项。

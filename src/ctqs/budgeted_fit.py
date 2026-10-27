@@ -9,7 +9,7 @@ class ClosureBudgetReached(Exception):
 
 
 def fit(model, objective, optimizer_name, evaluations, adam_lr=.005,
-        lbfgs_lr=1., history_size=20, deadline=None):
+        lbfgs_lr=1., history_size=20, deadline=None, on_accepted=None):
     """Objective returns a scalar; no ED, selection or unseen-point query here.
 
     The budget is in complete objective-and-gradient evaluations. L-BFGS may
@@ -53,5 +53,7 @@ def fit(model, objective, optimizer_name, evaluations, adam_lr=.005,
                 for row in history[before:]: row['accepted_step_completed'] = False
                 break
         for row in history[before:]: row['accepted_step_completed'] = True
+        if on_accepted is not None:
+            on_accepted(model, calls, steps)
     return dict(closure_evaluations=calls, optimizer_steps_completed=steps,
                 discarded_final_step_evaluations=discarded, history=history)

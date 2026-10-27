@@ -1,0 +1,31 @@
+{
+  "original": "20261026T182324574441Z-round7-transformer-lbfgs-raw-wide-s101",
+  "replay": "20261026T183353875886Z-round7-replay-transformer-lbfgs-raw-wide-s101",
+  "atol": 0.0,
+  "rtol": 0.0,
+  "scope": "agent-run reproduction; not independent human review",
+  "checks": {
+    "metrics.json": {
+      "numeric_values": 3300,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/99/variance",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    },
+    "training.json": {
+      "numeric_values": 3636,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/validation/9/validation_energy_per_spin",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    },
+    "amplitudes.json": {
+      "numeric_values": 3200,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/selected/1.825/9",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    }
+  },
+  "passed": true
+}

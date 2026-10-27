@@ -26,7 +26,13 @@ def check_manifest(p):
     if obj.get('run_id')!=p.parent.name:errors.append(f'{p}: run_id must match run folder name')
     if obj.get('status') not in STATUS:errors.append(f'{p}: invalid status')
     if not isinstance(obj.get('seed'),int) or isinstance(obj.get('seed'),bool) or obj['seed']<0:errors.append(f'{p}: invalid seed')
-    if not isinstance(obj.get('issue'),int) or isinstance(obj.get('issue'),bool) or obj['issue']<=0:errors.append(f'{p}: invalid issue number')
+    issue=obj.get('issue')
+    local_id=obj.get('local_task_id','')
+    local_ok=(issue is None and obj.get('schema_version',0)>=2 and obj.get('publication')=='local-only'
+              and isinstance(local_id,str) and local_id.startswith('local-')
+              and '/' not in local_id and '\\' not in local_id
+              and (ROOT/'docs'/'local_tasks'/f'{local_id}.md').is_file())
+    if not local_ok and (not isinstance(issue,int) or isinstance(issue,bool) or issue<=0):errors.append(f'{p}: invalid issue number or unregistered local task')
     if obj.get('status')=='completed':
         if not obj.get('command'):errors.append(f'{p}: completed run missing command')
         if not obj.get('environment'):errors.append(f'{p}: completed run missing environment')

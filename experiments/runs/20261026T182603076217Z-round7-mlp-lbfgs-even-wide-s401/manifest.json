@@ -1,0 +1,336 @@
+{
+  "schema_version": 2,
+  "run_id": "20261026T182603076217Z-round7-mlp-lbfgs-even-wide-s401",
+  "created_at_utc": "20261026T182603076217Z",
+  "status": "completed",
+  "owner": "Codex-assisted local research; human contributions to be completed by members",
+  "issue": null,
+  "local_task_id": "local-round7-course-generalization",
+  "publication": "local-only",
+  "git_commit": "3f1aaa9c9faf0ad7045b28b4e095dc2b2a572a6c",
+  "seed": 401,
+  "question": "Does wider fixed-cardinality h coverage improve held-out prediction after training reliability is checked?",
+  "model": {
+    "architecture": "mlp",
+    "optimizer": "lbfgs",
+    "training_mode": "even",
+    "coverage": "wide",
+    "parameters": 1569,
+    "initial_parameter_hash": "a4fdfb26d742ba441b4cd0c948706c8db198acc2e318bac8af95b3fad747c42a",
+    "selected_closure": 300,
+    "endpoint_parameter_hashes": {
+      "selected": "ad718e41fd5c64d0526b84bfd50be1983d25f83be57215c8c83a8249f6542f83",
+      "final": "4d85c07736b3c4b7d5d582f3d3301040db3194e7d983d41b1c9d667789857fab"
+    }
+  },
+  "hamiltonian": {
+    "n": 6,
+    "boundary": "open",
+    "J": 1,
+    "lambda_value": 0.0,
+    "hbar": 1,
+    "basis": "MSB left; Z(0)=+1"
+  },
+  "parameter_split": {
+    "train": [
+      0.2,
+      0.8,
+      1.4
+    ],
+    "validation": [
+      0.55,
+      1.05
+    ],
+    "test_regions": {
+      "common_interpolation": [
+        0.475,
+        0.625,
+        0.725,
+        0.875,
+        0.975,
+        1.125
+      ],
+      "coverage_extension": [
+        0.225,
+        0.275,
+        0.325,
+        0.375,
+        1.225,
+        1.275,
+        1.325,
+        1.375
+      ],
+      "common_extrapolation": [
+        0.08,
+        0.125,
+        0.175,
+        1.475,
+        1.625,
+        1.825
+      ]
+    }
+  },
+  "command": "python scripts/run_round7.py --arch mlp --optimizer lbfgs --mode even --coverage wide --seed 401 --tag round7",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "device": "cpu",
+    "threads": 1,
+    "dtype": "float64"
+  },
+  "budget": {
+    "closure_evaluations": 1200,
+    "optimizer_steps_completed": 568,
+    "discarded_final_step_evaluations": 0,
+    "training_forward_h_actions": 3600,
+    "training_backward_h_actions": 3600,
+    "validation_h_actions": 24,
+    "training_network_calls": 3600,
+    "validation_state_calls": 24,
+    "raw_network_calls_training": 3600,
+    "raw_network_calls_validation": 24,
+    "training_projection_applications": 3600,
+    "validation_projection_applications": 24,
+    "evaluation_state_calls": 50,
+    "raw_check_model_calls": 20,
+    "postprocessing_h_actions": 150,
+    "evaluation_h_actions": 300,
+    "evaluation_ed_calls": 25,
+    "training_seconds": 2.443684800000483,
+    "wall_seconds": 2.4759233000004315,
+    "training_parameter_points": 3,
+    "device": "cpu"
+  },
+  "oracle_access": {
+    "training": false,
+    "checkpoint_selection": false,
+    "evaluation": "ED only after selected/final checkpoint freeze",
+    "lookup": false,
+    "ritz_basis": false
+  },
+  "metrics": {
+    "selected/train/direct": {
+      "mean_infidelity": 2.7128003531847373e-05,
+      "worst_infidelity": 6.088228191314382e-05,
+      "mean_energy_error_per_spin": 1.880862816763498e-05,
+      "mean_abs_mz_error": 0.00015765276219675828,
+      "worst_correlation_error": 0.002583054771730653
+    },
+    "selected/train/lookup": {
+      "mean_infidelity": 2.7128003531847373e-05,
+      "worst_infidelity": 6.088228191314382e-05,
+      "mean_energy_error_per_spin": 1.880862816763498e-05,
+      "mean_abs_mz_error": 0.00015765276219675828,
+      "worst_correlation_error": 0.002583054771730653
+    },
+    "selected/train/train_span_ritz": {
+      "mean_infidelity": 2.501011582223267e-05,
+      "worst_infidelity": 5.506054777071334e-05,
+      "mean_energy_error_per_spin": 1.7935835732717385e-05,
+      "mean_abs_mz_error": 6.423223449375515e-05,
+      "worst_correlation_error": 0.0019145116068179924
+    },
+    "selected/validation/direct": {
+      "mean_infidelity": 0.0003849838561698071,
+      "worst_infidelity": 0.0005406426972818235,
+      "mean_energy_error_per_spin": 0.00023392046753789586,
+      "mean_abs_mz_error": 0.005071206527319516,
+      "worst_correlation_error": 0.011387709819706826
+    },
+    "selected/validation/lookup": {
+      "mean_infidelity": 0.0047928918518906904,
+      "worst_infidelity": 0.005611893245027977,
+      "mean_energy_error_per_spin": 0.0023361092744327294,
+      "mean_abs_mz_error": 0.02970287274325739,
+      "worst_correlation_error": 0.06951928374507607
+    },
+    "selected/validation/train_span_ritz": {
+      "mean_infidelity": 0.0008419822801610799,
+      "worst_infidelity": 0.0014771342061797865,
+      "mean_energy_error_per_spin": 0.000333106122566725,
+      "mean_abs_mz_error": 0.008133825998512756,
+      "worst_correlation_error": 0.018956530234775726
+    },
+    "selected/common_interpolation/direct": {
+      "mean_infidelity": 0.0002577538252825917,
+      "worst_infidelity": 0.0006764144099513647,
+      "mean_energy_error_per_spin": 0.0001575840999801977,
+      "mean_abs_mz_error": 0.0038368836944651465,
+      "worst_correlation_error": 0.01499416051736635
+    },
+    "selected/common_interpolation/lookup": {
+      "mean_infidelity": 0.0031224634663181336,
+      "worst_infidelity": 0.006596238971164015,
+      "mean_energy_error_per_spin": 0.0015261454789496675,
+      "mean_abs_mz_error": 0.02271441817659377,
+      "worst_correlation_error": 0.06662148746547705
+    },
+    "selected/common_interpolation/train_span_ritz": {
+      "mean_infidelity": 0.000544059963984341,
+      "worst_infidelity": 0.0018978561182662057,
+      "mean_energy_error_per_spin": 0.00022099835739868785,
+      "mean_abs_mz_error": 0.006167227359335466,
+      "worst_correlation_error": 0.016529112133514268
+    },
+    "selected/coverage_extension/direct": {
+      "mean_infidelity": 0.00022822388239965297,
+      "worst_infidelity": 0.0006531518332213437,
+      "mean_energy_error_per_spin": 0.00012586303384522676,
+      "mean_abs_mz_error": 0.0024033655625272515,
+      "worst_correlation_error": 0.015339533350919754
+    },
+    "selected/coverage_extension/lookup": {
+      "mean_infidelity": 0.0017444015127400653,
+      "worst_infidelity": 0.00499835648871505,
+      "mean_energy_error_per_spin": 0.0009021178633985179,
+      "mean_abs_mz_error": 0.010391279341058317,
+      "worst_correlation_error": 0.0435120740226448
+    },
+    "selected/coverage_extension/train_span_ritz": {
+      "mean_infidelity": 0.00044153514023900775,
+      "worst_infidelity": 0.0015748796899502926,
+      "mean_energy_error_per_spin": 0.00018167161169407864,
+      "mean_abs_mz_error": 0.001852137691304663,
+      "worst_correlation_error": 0.006784436891823398
+    },
+    "selected/common_extrapolation/direct": {
+      "mean_infidelity": 0.0007060043367513869,
+      "worst_infidelity": 0.00186590919486318,
+      "mean_energy_error_per_spin": 0.0005071543398704994,
+      "mean_abs_mz_error": 0.0034496629797279854,
+      "worst_correlation_error": 0.011221293446956902
+    },
+    "selected/common_extrapolation/lookup": {
+      "mean_infidelity": 0.0054566156733110716,
+      "worst_infidelity": 0.011579636945893035,
+      "mean_energy_error_per_spin": 0.003818487222999724,
+      "mean_abs_mz_error": 0.02007368667978482,
+      "worst_correlation_error": 0.033611316984051176
+    },
+    "selected/common_extrapolation/train_span_ritz": {
+      "mean_infidelity": 0.0005256048322430466,
+      "worst_infidelity": 0.0016567776817877355,
+      "mean_energy_error_per_spin": 0.0003349405776243615,
+      "mean_abs_mz_error": 0.002690428238122646,
+      "worst_correlation_error": 0.011336627595678765
+    },
+    "final/train/direct": {
+      "mean_infidelity": 1.7171589633916777e-06,
+      "worst_infidelity": 4.94968114539418e-06,
+      "mean_energy_error_per_spin": 1.0743188078896378e-06,
+      "mean_abs_mz_error": 3.382787386907449e-05,
+      "worst_correlation_error": 0.00010929586003027847
+    },
+    "final/train/lookup": {
+      "mean_infidelity": 1.7171589635397073e-06,
+      "worst_infidelity": 4.94968114539418e-06,
+      "mean_energy_error_per_spin": 1.074318808087011e-06,
+      "mean_abs_mz_error": 3.382787386903748e-05,
+      "worst_correlation_error": 0.00010929586003027847
+    },
+    "final/train/train_span_ritz": {
+      "mean_infidelity": 1.650020070983101e-06,
+      "worst_infidelity": 4.7601258937879365e-06,
+      "mean_energy_error_per_spin": 1.0479810991843092e-06,
+      "mean_abs_mz_error": 1.5718072718680826e-05,
+      "worst_correlation_error": 0.0001628929707854221
+    },
+    "final/validation/direct": {
+      "mean_infidelity": 0.0005679122656906954,
+      "worst_infidelity": 0.0008397473566166269,
+      "mean_energy_error_per_spin": 0.00025655076466383575,
+      "mean_abs_mz_error": 0.007596735798179988,
+      "worst_correlation_error": 0.021469263329496946
+    },
+    "final/validation/lookup": {
+      "mean_infidelity": 0.004646056238112373,
+      "worst_infidelity": 0.005356780740022882,
+      "mean_energy_error_per_spin": 0.0022683953768503815,
+      "mean_abs_mz_error": 0.02932843303067184,
+      "worst_correlation_error": 0.06806213274066036
+    },
+    "final/validation/train_span_ritz": {
+      "mean_infidelity": 0.0007963565391433391,
+      "worst_infidelity": 0.0013979011929143859,
+      "mean_energy_error_per_spin": 0.00030455396714460886,
+      "mean_abs_mz_error": 0.007929824315858536,
+      "worst_correlation_error": 0.019739361975455227
+    },
+    "final/common_interpolation/direct": {
+      "mean_infidelity": 0.00036472307585081837,
+      "worst_infidelity": 0.0009941282040897281,
+      "mean_energy_error_per_spin": 0.00016437723910731368,
+      "mean_abs_mz_error": 0.005795498299550912,
+      "worst_correlation_error": 0.024060127063631365
+    },
+    "final/common_interpolation/lookup": {
+      "mean_infidelity": 0.0030105967734533334,
+      "worst_infidelity": 0.0062305284022518,
+      "mean_energy_error_per_spin": 0.0014716008311788343,
+      "mean_abs_mz_error": 0.022437315699668576,
+      "worst_correlation_error": 0.06475948083429961
+    },
+    "final/common_interpolation/train_span_ritz": {
+      "mean_infidelity": 0.0005063346471009441,
+      "worst_infidelity": 0.0017638602162656225,
+      "mean_energy_error_per_spin": 0.00019595072638304659,
+      "mean_abs_mz_error": 0.006019092644957554,
+      "worst_correlation_error": 0.017806339062881538
+    },
+    "final/coverage_extension/direct": {
+      "mean_infidelity": 0.0002539315667089981,
+      "worst_infidelity": 0.0008245036472146472,
+      "mean_energy_error_per_spin": 0.0001056985048512778,
+      "mean_abs_mz_error": 0.003018480147111327,
+      "worst_correlation_error": 0.020524365821421253
+    },
+    "final/coverage_extension/lookup": {
+      "mean_infidelity": 0.0015801909677679304,
+      "worst_infidelity": 0.004569410483970526,
+      "mean_energy_error_per_spin": 0.0008329214645981797,
+      "mean_abs_mz_error": 0.010118048074884235,
+      "worst_correlation_error": 0.043071760118303506
+    },
+    "final/coverage_extension/train_span_ritz": {
+      "mean_infidelity": 0.0003610639632001533,
+      "worst_infidelity": 0.0013876049597946194,
+      "mean_energy_error_per_spin": 0.00014495114856914274,
+      "mean_abs_mz_error": 0.001751882918934737,
+      "worst_correlation_error": 0.006881150349570819
+    },
+    "final/common_extrapolation/direct": {
+      "mean_infidelity": 0.0007190299469102915,
+      "worst_infidelity": 0.0019052500376327552,
+      "mean_energy_error_per_spin": 0.0005000262030314179,
+      "mean_abs_mz_error": 0.003927996741969392,
+      "worst_correlation_error": 0.010812050098900405
+    },
+    "final/common_extrapolation/lookup": {
+      "mean_infidelity": 0.005388256171234562,
+      "worst_infidelity": 0.011523117995233978,
+      "mean_energy_error_per_spin": 0.0037804365995265997,
+      "mean_abs_mz_error": 0.019992154819554214,
+      "worst_correlation_error": 0.03371286719440292
+    },
+    "final/common_extrapolation/train_span_ritz": {
+      "mean_infidelity": 0.0005892341961099371,
+      "worst_infidelity": 0.001963581767499556,
+      "mean_energy_error_per_spin": 0.0003459557678659279,
+      "mean_abs_mz_error": 0.002738624148209643,
+      "worst_correlation_error": 0.009176842202684388
+    }
+  },
+  "artifacts": [
+    "config.json",
+    "metrics.json",
+    "training.json",
+    "amplitudes.json",
+    "checks.json"
+  ],
+  "config_sha256": "3154283ee5fa6433cd6a86cd9372c98b25ad2ea918c5f398f96b53e1de3121f4",
+  "notes": "Five seeds; full enumeration. Local prospective extension; same H work is not equal total compute. Even projection is a labeled physical control."
+}

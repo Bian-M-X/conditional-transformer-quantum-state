@@ -1,0 +1,84 @@
+{
+  "n": 6,
+  "lambda": 0.0,
+  "train_sets": {
+    "narrow": [
+      0.4,
+      0.8,
+      1.2
+    ],
+    "wide": [
+      0.2,
+      0.8,
+      1.4
+    ]
+  },
+  "validation": [
+    0.55,
+    1.05
+  ],
+  "test_regions": {
+    "common_interpolation": [
+      0.475,
+      0.625,
+      0.725,
+      0.875,
+      0.975,
+      1.125
+    ],
+    "coverage_extension": [
+      0.225,
+      0.275,
+      0.325,
+      0.375,
+      1.225,
+      1.275,
+      1.325,
+      1.375
+    ],
+    "common_extrapolation": [
+      0.08,
+      0.125,
+      0.175,
+      1.475,
+      1.625,
+      1.825
+    ]
+  },
+  "architectures": [
+    "transformer",
+    "mlp"
+  ],
+  "optimizers_by_architecture": {
+    "transformer": [
+      "adam",
+      "lbfgs"
+    ],
+    "mlp": [
+      "lbfgs"
+    ]
+  },
+  "training_modes": [
+    "raw",
+    "even"
+  ],
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "closure_evaluations": 1200,
+  "validation_every_closures": 100,
+  "adam_lr": 0.005,
+  "lbfgs_lr": 1.0,
+  "lbfgs_history_size": 20,
+  "timeout_seconds_per_run": 600,
+  "invocation_timeout_seconds": 3600,
+  "normalization_tolerance": 1e-10,
+  "causality_tolerance": 1e-10,
+  "reliable_anchor_infidelity": 0.01,
+  "required_paired_wins": 4,
+  "local_task_id": "local-round7-course-generalization"
+}

@@ -1,0 +1,110 @@
+test_config_rejects_test_leakage (test_acquisition.TestAcquisition.test_config_rejects_test_leakage) ... ok
+test_covariance_and_norm_at_nonzero_field (test_acquisition.TestAcquisition.test_covariance_and_norm_at_nonzero_field) ... ok
+test_exact_budget_including_odd_query_cost (test_acquisition.TestAcquisition.test_exact_budget_including_odd_query_cost) ... ok
+test_scores_against_reference_and_no_full_eigensolve (test_acquisition.TestAcquisition.test_scores_against_reference_and_no_full_eigensolve) ... ok
+test_selection_excludes_train_and_ties_are_stable (test_acquisition.TestAcquisition.test_selection_excludes_train_and_ties_are_stable) ... ok
+test_adam_and_real_lbfgs_exact_closure_cap (test_budgeted_fit.TestBudgetedFit.test_adam_and_real_lbfgs_exact_closure_cap) ... ok
+test_budget_exhausted_trial_restores_last_accepted (test_budgeted_fit.TestBudgetedFit.test_budget_exhausted_trial_restores_last_accepted) ... ok
+test_nonfinite_is_failure_not_false_completion (test_budgeted_fit.TestBudgetedFit.test_nonfinite_is_failure_not_false_completion) ... ok
+test_covariance_normalization_scaling_and_gradient (test_conditioning.TestConditioning.test_covariance_normalization_scaling_and_gradient) ... ok
+test_frozen_grid_and_factorial (test_conditioning.TestConditioning.test_frozen_grid_and_factorial) ... ok
+test_frozen_grid_and_job_count (test_coordinates.TestCoordinates.test_frozen_grid_and_job_count) ... ok
+test_invalid_scale_and_missing_gradient (test_coordinates.TestCoordinates.test_invalid_scale_and_missing_gradient) ... ok
+test_multistep_physical_trajectory_and_moments (test_coordinates.TestCoordinates.test_multistep_physical_trajectory_and_moments) ... ok
+test_exact_formulas_and_nonuniform_limit (test_covariance_counterexample.TestCovarianceCounterexample.test_exact_formulas_and_nonuniform_limit) ... ok
+test_dual_primal_and_gradient_factor (test_exact_sr.TestExactSR.test_dual_primal_and_gradient_factor) ... ok
+test_models_jacobian_qgt_and_force (test_exact_sr.TestExactSR.test_models_jacobian_qgt_and_force) ... ok
+test_one_spin_imaginary_time_and_budget (test_exact_sr.TestExactSR.test_one_spin_imaginary_time_and_budget) ... ok
+test_identity_bound_and_incomplete_certificate (test_flip_witness.TestFlipWitness.test_identity_bound_and_incomplete_certificate) ... ok
+test_even_state_and_variational_gradient (test_models.TestModels.test_even_state_and_variational_gradient) ... ok
+test_normalization_and_causality_in_train_and_eval (test_models.TestModels.test_normalization_and_causality_in_train_and_eval) ... ok
+test_hamiltonian_against_kronecker (test_physics.TestPhysics.test_hamiltonian_against_kronecker) ... ok
+test_lookup_endpoints (test_physics.TestPhysics.test_lookup_endpoints) ... ok
+test_ritz_rank_and_variational_bound (test_physics.TestPhysics.test_ritz_rank_and_variational_bound) ... ok
+test_symmetry_and_covariance (test_physics.TestPhysics.test_symmetry_and_covariance) ... ok
+test_zero_field_degeneracy (test_physics.TestPhysics.test_zero_field_degeneracy) ... ok
+test_local_delivery_requires_registered_task (test_round7.TestLocalManifest.test_local_delivery_requires_registered_task) ... ok
+test_callback_never_sees_rejected_line_search_trial (test_round7.TestRound7.test_callback_never_sees_rejected_line_search_trial) ... ok
+test_disjoint_regions_and_sixty_jobs (test_round7.TestRound7.test_disjoint_regions_and_sixty_jobs) ... ok
+test_validation_uses_no_oracle_and_restores_mode (test_round7.TestRound7.test_validation_uses_no_oracle_and_restores_mode) ... ok
+test_current_files (test_scaffold.TestCollaborationScaffold.test_current_files) ... ok
+test_reject_fake_completed_run (test_scaffold.TestCollaborationScaffold.test_reject_fake_completed_run) ... ok
+test_run_id (test_scaffold.TestCollaborationScaffold.test_run_id) ... ok
+test_compensating_affine_column_preserves_all_amplitudes (test_scaling_equivalence.TestScalingEquivalence.test_compensating_affine_column_preserves_all_amplitudes) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 2.409s
+
+OK
+PASS: required collaboration files present; 510 run manifest(s) validated
+{
+  "status": "passed",
+  "completed_jobs": 60,
+  "failed_jobs": 0,
+  "metric_rows": 9000,
+  "frozen_source_commit": "3f1aaa9c9faf0ad7045b28b4e095dc2b2a572a6c",
+  "paired_initial_hash_groups": 10,
+  "maximum_raw_norm_error": 2.220446049250313e-16,
+  "maximum_causality_logit_difference": 0.0,
+  "minimum_energy_error_per_spin": 0.0,
+  "maximum_independent_numpy_recalculation_difference": 1.0838865471818337e-08,
+  "evaluation": "stored amplitudes re-scored by NumPy eigh; training not rerun",
+  "statistical_unit": "seed",
+  "independent_human_review": false
+}
+{
+  "original": "20261019T135010710747Z-round1-transformer-even-s17",
+  "replay": "20261026T181221870604Z-round7-baseline-replay-transformer-even-s17",
+  "atol": 1e-08,
+  "rtol": 1e-06,
+  "scope": "agent-run reproduction; not independent human review",
+  "checks": {
+    "metrics.json": {
+      "numeric_values": 1275,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/9/variance",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    },
+    "training.json": {
+      "numeric_values": 36,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/9/validation_energy_per_spin",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    }
+  },
+  "passed": true
+}
+{
+  "original": "20261026T182324574441Z-round7-transformer-lbfgs-raw-wide-s101",
+  "replay": "20261026T183353875886Z-round7-replay-transformer-lbfgs-raw-wide-s101",
+  "atol": 0.0,
+  "rtol": 0.0,
+  "scope": "agent-run reproduction; not independent human review",
+  "checks": {
+    "metrics.json": {
+      "numeric_values": 3300,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/99/variance",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    },
+    "training.json": {
+      "numeric_values": 3636,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/validation/9/validation_energy_per_spin",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    },
+    "amplitudes.json": {
+      "numeric_values": 3200,
+      "max_absolute_difference": 0.0,
+      "max_difference_path": "/selected/1.825/9",
+      "within_declared_tolerance": true,
+      "discrepancies": []
+    }
+  },
+  "passed": true
+}
+Audit passed. This re-scores saved evidence; it does not rerun training.
