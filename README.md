@@ -16,6 +16,12 @@
 复核：`.venv\Scripts\python.exe scripts/verify_round6.py`。29项测试、2260行本轮指标与40个初始化对照；N=8/10与完整成本验证尚未执行。
 用户明确要求本轮上传同步 main；保留远程 README 改动和全部研究历史。main 的整合不代表独立成员科学复核，结论仍为 provisional。
 
+## 课题 12 文献答案地图与六轮研究史（2026-10-26）
+
+- [正文](docs/topic12_literature_and_history.md) / [PDF](docs/topic12_literature_and_history.pdf)
+- 回答“哪些问题已被 TQS / FNQS / FNEH / Heightman 等论文回答、哪些还没有”，并把六轮的动机、结果、被排除的解释和 ICLR 差距串成一条线。
+- 这是文献与项目史复核，不是新的实验结论；引用核验范围逐篇标注，独立成员复核仍未完成。
+
 ## 第五轮研究入口（Issue #9，路线决策，待独立复核）
 
 - [前四轮路线评估](docs/strategy_after_round4.md) / [第五轮报告](docs/round5_report.md) / [PDF](docs/round5_report.pdf) / [交接记录](docs/handoffs/issue-9.md)
