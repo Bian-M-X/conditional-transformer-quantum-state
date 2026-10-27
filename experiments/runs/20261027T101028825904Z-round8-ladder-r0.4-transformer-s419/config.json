@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "issue": 19,
+  "n": 8,
+  "families": {
+    "chain": {
+      "h": 0.55
+    },
+    "ladder": {
+      "h": 1.15
+    }
+  },
+  "radii": [
+    0.06,
+    0.4
+  ],
+  "architectures": [
+    "mlp",
+    "transformer"
+  ],
+  "seeds": [
+    107,
+    223,
+    311,
+    419,
+    521
+  ],
+  "maturities": [
+    100,
+    400,
+    1200
+  ],
+  "action_closures": 200,
+  "query_fractions": [
+    -0.9,
+    -0.65,
+    -0.3,
+    -0.08,
+    0.08,
+    0.3,
+    0.65,
+    0.9
+  ],
+  "optimizer": {
+    "name": "lbfgs",
+    "lr": 1.0,
+    "history_size": 20
+  },
+  "actions": [
+    "stop",
+    "refine_left",
+    "refine_right",
+    "acquire_center"
+  ],
+  "basis_variants": [
+    "raw",
+    "flip_closed"
+  ],
+  "primary_variant": "flip_closed",
+  "primary_maturity": 1200,
+  "rank_rtol": 1e-10,
+  "simple_policies": [
+    "stop",
+    "refine_left",
+    "refine_right",
+    "acquire_center",
+    "anchor_residual",
+    "snapshot_residual"
+  ],
+  "gate": {
+    "minimum_baseline_error": 0.001,
+    "minimum_relative_headroom": 0.2,
+    "minimum_leave_one_out_headroom": 0.1,
+    "minimum_eligible_strata": 2,
+    "required_families": 2,
+    "minimum_winner_seed_ids_per_type": 2,
+    "minimum_absolute_action_advantage": 0.0001
+  },
+  "timeout_seconds_per_job": 600,
+  "timeout_seconds_per_invocation": 3600,
+  "scope": "N=8 development pilot; one-step hindsight headroom at fixed closure allowances; no learned policy or Monte Carlo action"
+}

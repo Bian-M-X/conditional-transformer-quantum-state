@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-27",
+  "status": "local_validation_passed",
+  "frozen_numerical_commit": "d2595d75514862b09fb41d6ea004cac191c88015",
+  "main_jobs": 40,
+  "main_metric_rows": 8280,
+  "query_seed_endpoints": 960,
+  "replay_jobs": 1,
+  "workspace_manifests": 551,
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "result": "50 passed",
+      "environment_note": "TEMP/TMP set process-locally to repository tmp; first default sandbox-temp invocation had two PermissionErrors"
+    },
+    {
+      "command": "python scripts/validate_workspace.py",
+      "result": "551 manifests passed"
+    },
+    {
+      "command": "python scripts/verify_round7.py",
+      "result": "60 jobs / 9000 saved metric rows passed"
+    },
+    {
+      "command": "python scripts/verify_round8.py --local-checkpoints",
+      "result": "40 jobs / 8280 saved metric rows / 600 safe checkpoints and recorded replay passed"
+    },
+    {
+      "command": "python scripts/analyze_round8.py",
+      "result": "all 48 strata preserved; primary 0/8 eligible"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "pdf": {
+    "pages": 5,
+    "rendered_with": "pdftoppm -scale-to 1350 -png",
+    "visual_review": "All five latest rendered pages inspected; no clipping or overlap observed"
+  },
+  "primary_gate": {
+    "pass_gate": false,
+    "eligible_strata": 0,
+    "eligible_families": [],
+    "eligible_keys": [],
+    "refine_winner_seed_ids": [],
+    "acquire_winner_seed_ids": [],
+    "enough_eligible_strata": false,
+    "enough_families": false,
+    "enough_refine_seed_ids": false,
+    "enough_acquire_seed_ids": false,
+    "interpretation": "Prospective investment gate only; no significance or deployable-speedup claim."
+  },
+  "hashes": {
+    "scripts/run_round8.py": "e2c0553e77f268830ab3b05f1311cc2e8fa59d390a38e586ddd1edd0405231c3",
+    "src/ctqs/affine_spin.py": "894d538cadd55c079d1a2f22fdd89af5e8453c09e4ca602b27b734742690e69a",
+    "src/ctqs/resumable_fit.py": "fc5354b77a47844fd3d183be31e34eba03dd4769bf3e0269f1cf0b9b02589407",
+    "experiments/configs/round8.json": "59f2110c60e00300f720dcdb53c5a520a1c9dbc7cf6e0b3a1797863cdd4e216c",
+    "docs/round8_preregistration.md": "8ce95575b7d0e607868435c7047caaa955faf792d16ce0c3db62bc8fa3bc435d",
+    "scripts/analyze_round8.py": "e593c8ad3197c3e7060a2ee973470091ca0d4655d0eff18371afa86794dfcdbc",
+    "scripts/verify_round8.py": "c1457f5b90918531b9a5557e0ce5096773c35771edbbc62c56d1d7443ec057a0",
+    "tests/test_headroom_analysis.py": "2cf552bbd4edafa0c683823f769b406df6996856f1336803503b1902352e48bd",
+    "docs/round8_report.md": "ad10e69e68fc55b6672db1913a46b62a49d15fb883b047642f0b5092cb6f3aee",
+    "docs/round8_report.pdf": "e4ede22b71d6207b692676d752ebb27d9a2e0592ac23ae4149eea7fa1e349cff",
+    "docs/results/round8/summary.json": "8e5928a1e270f67eaf454b39e212f032da4903bfd41fe502d127b333084914a8",
+    "docs/results/round8/audit.json": "65f35ef74c3ab3fcd80850aecd745ab57895d6e8932fd679cfc6bb5e577401b1",
+    "docs/results/round8/replay_check.json": "c27543023a899a46b439e7500958cce0ea981fa223a2f2fac7e84ac3c7febdb9",
+    "docs/results/round8/design_review.json": "c81475850b8ef13ceebd70dcc4fb3e09cba16f8e8f6284b9a89d39face22ab5f",
+    "docs/results/round8/primary_headroom.png": "a7dfb0fab7575e7637417cbe265c6cc241fb814c02b1f800db9fdf09fd6ebccf",
+    "docs/results/round8/raw_closed_sensitivity.png": "94c5e23bf1d3e98c8bb0b8ee4a1ee3874fc3b7b838decd349140e4a5ab6a07c9"
+  },
+  "hash_convention": "SHA256; CRLF normalized to LF for text, binary bytes unchanged",
+  "limitations": "Local validation receipt. Remote CI reported in PR checks; no independent-human review, held-out transfer or deployable scheduler advantage established."
+}

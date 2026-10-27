@@ -1,17 +1,25 @@
 # Conditional Transformer Quantum State (CTQS)
 
-**Research status: exploratory / early-stage validation.** 研究目标是考察**近简并区域中条件神经网络量子态的可靠训练与泛化**。七轮之后，有条件优先检验训练精修、参数扩充与采样估计的联合预算决策。近期文献已覆盖一般摊销交叉点及自适应快照精度，不能将这些想法本身当作新贡献。科学结论仍待独立成员复核。
+**Research status: exploratory / early-stage validation.** 研究目标是考察**近简并区域中条件神经网络量子态的可靠训练与泛化**。第八轮精修/加点先导未过投资门槛，暂缓当前动作菜单上的复杂调度器开发，先独立复核与重新立题。近期文献已覆盖一般摊销交叉点及自适应快照精度，不能将这些想法本身当作新贡献。科学结论仍待独立成员复核。
 
 **当前候选题目（未定稿）**：近简并系统中条件神经网络量子态的训练可靠性与摊销价值
 
 **English**: Training Reliability and Amortization Value of Conditional Neural Quantum States near Quasi-Degeneracies
 
-## 当前选题决策（2026-10-27，Issue #17）
+## 第八轮：精修/加点选择空间的止损判别（Issue #19）
+
+- [报告](docs/round8_report.md) / [PDF](docs/round8_report.pdf) / [冻结协议](docs/round8_preregistration.md) / [交接](docs/handoffs/issue-19.md)
+- 40组N8链/梯、MLP/Transformer、5配对种子及一次同机重跑完成；8280行主指标、600完整本地检查点、50项测试通过。独立Kronecker/NumPy复算和重跑回执见[完整结果](docs/results/round8/tables.md)。
+- 主端点8条件均未通过投资门槛；7/8中固定中心加点等于逐种子事后最优动作，唯一非零相对空间8.32%，绝对改善2.05e-6。停止当前菜单上的复杂调度器开发，先独立复核与重新立题。
+- 新矩阵自由H、缓存仿射Ritz、可恢复优化器/RNG已验证；没有学得调度器、重采样收益、部署成本优势或ICLR成熟度结论。本轮不能替代原题多h共享模型证据。
+- 复核：`python scripts/verify_round8.py`；本地保留检查点可加`--local-checkpoints`。源码冻结d2595d7；独立成员复核仍待完成。
+
+## 选题决策的前期记录（2026-10-27，Issue #17）
 
 - [决策正文](docs/research_direction_20261027.md) / [PDF](docs/research_direction_20261027.pdf) / [来源与勘误](docs/literature_direction_20261027.md) / [交接](docs/handoffs/issue-17.md)
 - 已同步协作者[第七轮](docs/round7_report.md)和原文献地图；最新main来源44e03c6，保留各分支历史。
 - 建议先做“下一单位预算应精修旧态、增加新锚点还是重采样”的可学性判别，再决定是否开发方法。新颖性、强对照、计费探测与跨家族门槛详见正文，尚无新方法结果。
-- 本机有16GiB GPU硬件，但现环境仍为CPU版PyTorch；N8/10机制先导可用CPU，采样/GPU扩展须另行验证。未启动新科学训练。
+- 本机有16GiB GPU硬件，但现环境仍为CPU版PyTorch；该决策时尚未启动新训练，后续N8先导及止损判断见上方第八轮。采样/GPU扩展仍须另行验证。
 
 ## 第六轮研究入口（Issue #11，SR/容量控制与 main 同步）
 
