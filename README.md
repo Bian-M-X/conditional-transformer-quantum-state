@@ -1,10 +1,17 @@
 # Conditional Transformer Quantum State (CTQS)
 
-**Research status: exploratory / early-stage validation.** 研究目标是考察**近简并区域中条件神经网络量子态的可靠训练与泛化**。第五轮路线评估后，暂缓主动选点主线，优先核查强优化器下共享模型的可靠性与查询成本价值。当前结果是预研究，不代表已有新的投稿级算法；正式结论仍待独立成员复核。
+**Research status: exploratory / early-stage validation.** 研究目标是考察**近简并区域中条件神经网络量子态的可靠训练与泛化**。七轮之后，有条件优先检验训练精修、参数扩充与采样估计的联合预算决策。近期文献已覆盖一般摊销交叉点及自适应快照精度，不能将这些想法本身当作新贡献。科学结论仍待独立成员复核。
 
 **当前候选题目（未定稿）**：近简并系统中条件神经网络量子态的训练可靠性与摊销价值
 
 **English**: Training Reliability and Amortization Value of Conditional Neural Quantum States near Quasi-Degeneracies
+
+## 当前选题决策（2026-10-27，Issue #17）
+
+- [决策正文](docs/research_direction_20261027.md) / [PDF](docs/research_direction_20261027.pdf) / [来源与勘误](docs/literature_direction_20261027.md) / [交接](docs/handoffs/issue-17.md)
+- 已同步协作者[第七轮](docs/round7_report.md)和原文献地图；最新main来源44e03c6，保留各分支历史。
+- 建议先做“下一单位预算应精修旧态、增加新锚点还是重采样”的可学性判别，再决定是否开发方法。新颖性、强对照、计费探测与跨家族门槛详见正文，尚无新方法结果。
+- 本机有16GiB GPU硬件，但现环境仍为CPU版PyTorch；N8/10机制先导可用CPU，采样/GPU扩展须另行验证。未启动新科学训练。
 
 ## 第六轮研究入口（Issue #11，SR/容量控制与 main 同步）
 
@@ -21,6 +28,7 @@
 - [正文](docs/topic12_literature_and_history.md) / [PDF](docs/topic12_literature_and_history.pdf)
 - 回答“哪些问题已被 TQS / FNQS / FNEH / Heightman 等论文回答、哪些还没有”，并把六轮的动机、结果、被排除的解释和 ICLR 差距串成一条线。
 - 这是文献与项目史复核，不是新的实验结论；引用核验范围逐篇标注，独立成员复核仍未完成。
+- 此为历史快照；成本交叉点、快照精修先例及猫态表述的更新见[2026-10-27核验与勘误](docs/literature_direction_20261027.md)。
 
 ## 第五轮研究入口（Issue #9，路线决策，待独立复核）
 

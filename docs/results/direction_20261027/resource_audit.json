@@ -1,0 +1,75 @@
+{
+  "recorded_client_date": "2026-10-27",
+  "scope": "Read-only resource and saved-evidence audit, no scientific training",
+  "repository": "D:/Research/conditional-transformer-quantum-state",
+  "source_main_at_audit_start": "44e03c6",
+  "code_provenance": {
+    "path": "tmp/issue17_resource_audit.py",
+    "status": "INITIAL and WARMED contain the Python stdin bodies actually executed; file dispatcher added afterwards and not executed",
+    "original_environment_prefix": "$env:OPENBLAS_NUM_THREADS='1'; $env:OMP_NUM_THREADS='1'",
+    "original_interpreter": ".venv/Scripts/python.exe -",
+    "exact_execution_timestamp": null,
+    "timestamp_note": "Per-command wall durations were returned by tools; exact start timestamps were not captured. No timestamp fabricated.",
+    "reproducibility_limit": "Timing is a short local microbenchmark, not a hardware throughput guarantee. WARMED did not set a random seed; exact parameter values and timing are not replay guarantees."
+  },
+  "environment_measured": {
+    "RAM_GiB": 63.67975616455078,
+    "available_RAM_GiB": 44.524227142333984,
+    "CPU_platform_processor_output": "",
+    "logical_cpu": 32,
+    "torch": "2.14.1+cpu",
+    "cuda_available": false,
+    "torch_threads": 1,
+    "dtype": "float64",
+    "gpu_hardware_note": "Parent's separately verified nvidia-smi readout reports RTX 5000 Ada Laptop about16 GiB; this child did not rerun nvidia-smi."
+  },
+  "initial_benchmark_output": [
+    {"n":6,"d":64,"parameters":2449,"H_MiB":0.03125,"H_build_s":0.00014899999951012433,"dense_H_action_ms":0.0012799999240087345,"matrix_free_H_action_ms":0.010150000161956996,"ED_first2_s":0.001152099997852929,"one_condition_closure_s":0.016656499999953667,"one_condition_J_s":6.267320999999356,"J_MiB":1.19580078125},
+    {"n":8,"d":256,"parameters":2481,"H_MiB":0.5,"H_build_s":0.00025320000349893235,"dense_H_action_ms":0.0061800001276424155,"matrix_free_H_action_ms":0.01477999976486899,"ED_first2_s":0.0013123999997333158,"one_condition_closure_s":0.004562199999782024,"one_condition_J_s":0.038039900002331706,"J_MiB":4.845703125},
+    {"n":10,"d":1024,"parameters":2513,"H_MiB":8.0,"H_build_s":0.0023901999993540812,"dense_H_action_ms":0.18022000003838912,"matrix_free_H_action_ms":0.041259999852627516,"ED_first2_s":0.04717440000240458,"one_condition_closure_s":0.021059733332852677,"one_condition_J_s":0.15069880000010016,"J_MiB":19.6328125}
+  ],
+  "warmed_benchmark_output": [
+    {"n":6,"closure_median_s":0.001656200001889374,"J_median_s":0.008693600000697188,"three_condition_kernel_build_solve_s":0.009669099999882746,"kernel_MiB":0.28125},
+    {"n":8,"closure_median_s":0.004948400001012487,"J_median_s":0.03353150000111782,"three_condition_kernel_build_solve_s":0.044204900001204805,"kernel_MiB":4.5},
+    {"n":10,"closure_median_s":0.02132759999949485,"J_median_s":0.14104230000157258,"three_condition_kernel_build_solve_s":0.9659568999995827,"kernel_MiB":72.0}
+  ],
+  "benchmark_limitations": [
+    "First-call initialization is included in INITIAL, especially the first jacrev call; use WARMED for per-step comparisons.",
+    "WARMED kernel uses repeated actual Jacobian at a single condition, not a separately trained three-condition model; timing only.",
+    "ED_first2_s requests eigenvalues0 and1 only; it does not measure full eigensystem cost used by current evaluation.",
+    "Matrix-free action was implemented inline for the microbenchmark and checked with np.allclose(atol=1e-12); it is not added to tracked source.",
+    "No full SR optimization, CUDA run, sampling implementation or new physical result was produced."
+  ],
+  "round7_verification": {
+    "command": ".venv/Scripts/python.exe scripts/verify_round7.py",
+    "actually_executed": true,
+    "exit_code": 0,
+    "status": "passed",
+    "completed_jobs": 60,
+    "failed_jobs": 0,
+    "metric_rows": 9000,
+    "frozen_source_commit": "3f1aaa9c9faf0ad7045b28b4e095dc2b2a572a6c",
+    "paired_initial_hash_groups": 10,
+    "maximum_raw_norm_error": 2.220446049250313e-16,
+    "maximum_causality_logit_difference": 0.0,
+    "minimum_energy_error_per_spin": 0.0,
+    "maximum_independent_numpy_recalculation_difference": 1.0838865471818337e-08,
+    "evaluation": "stored amplitudes re-scored by NumPy eigh; training not rerun",
+    "independent_human_review": false,
+    "tracked_file_status_after_execution": "git status --short returned no output; verifier regenerates evidence_audit.json but Git reported no tracked content change. No pre-run byte hash was captured."
+  },
+  "round7_costs_recomputed_from_csv": {
+    "source": "docs/results/round7/costs.csv",
+    "jobs":60,
+    "sum_wall_seconds":337.7951921999884,
+    "sum_training_seconds":334.49515419998716,
+    "median_wall_seconds":7.032106499998918
+  },
+  "derived_memory_GiB_not_measured_allocations": [
+    {"n":10,"one_dense_H":0.0078125,"three_condition_dual_kernel":0.0703125},
+    {"n":12,"one_dense_H":0.125,"three_condition_dual_kernel":1.125},
+    {"n":14,"one_dense_H":2.0,"three_condition_dual_kernel":18.0},
+    {"n":16,"one_dense_H":32.0,"three_condition_dual_kernel":288.0},
+    {"n":20,"one_dense_H":8192.0,"three_condition_dual_kernel":73728.0}
+  ]
+}

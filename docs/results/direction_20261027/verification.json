@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "date": "2026-10-27",
+  "unit_tests": 33,
+  "unit_tests_skipped": 0,
+  "workspace_manifests": 510,
+  "saved_evidence_verifiers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "new_scientific_training": false,
+  "gpu_training": false,
+  "engineering_microbenchmarks": true,
+  "pdf_pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "independent_human_review": false,
+  "source_main": "44e03c6d9073b0f96c30279b80c9e6b4fde9ccf3",
+  "topic13_source": "2317dd59dbbdcd07f9d6a9928c4ebaceb57a7101",
+  "synchronization_merge": "234007d3aabc42670c7345f53e22215717c98ce6",
+  "sha256": {
+    "docs/research_direction_20261027.md": {
+      "sha256": "17704a7ee6dbc778499b753a15e8247ced08a51b8fd1fa67c95ca98fafe299d3",
+      "normalization": "LF text"
+    },
+    "docs/research_direction_20261027.pdf": {
+      "sha256": "683eaf6b71a7d534a9601491f253c238cd5a8b4cb89b8c4966c710856fd8ee45",
+      "normalization": "raw binary"
+    },
+    "docs/literature_direction_20261027.md": {
+      "sha256": "d4f4959460bd0ef2d23969dc96af1d7c63d35e60753a0ced39672feb1e5adfd5",
+      "normalization": "LF text"
+    },
+    "docs/handoffs/issue-17.md": {
+      "sha256": "81741385bed1b41b175a0bc2f2a9e8cf7127fa9f436ffd02c6582d794af009d3",
+      "normalization": "LF text"
+    },
+    "docs/results/direction_20261027/resource_audit.json": {
+      "sha256": "1433404a22f0a291ab83f5929e51c8a8b51e070dcff2d15408c4bc4ebbb00903",
+      "normalization": "LF text"
+    },
+    "docs/results/direction_20261027/resource_audit_code.py": {
+      "sha256": "021df34d6efd80b4fe4ef043f5e9adcca812ac28ce994445916ad9e1b523a1cb",
+      "normalization": "LF text"
+    }
+  },
+  "notes": [
+    "All planned experiment thresholds are prospective, not observed outcomes.",
+    "Same-toolchain multi-agent analysis is not independent human replication.",
+    "Historical topic12 PDF retained; corrections and current decisions supplied in new documents.",
+    "Benchmark dispatch wrapper archived after actual stdin runs; not claimed executed."
+  ]
+}
